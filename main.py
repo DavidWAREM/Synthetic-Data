@@ -1,18 +1,22 @@
 import logging
 import os
+from data_loader import DataLoader
 
 
-
-def process_file():
+def process_file(file_path):
     logging.info(f"Starting file processing")
 
     # Part for Import the data
+
+    df = DataLoader(file_path)
+    df.read_txt()
+
 
     iterations = 3
     for i in range(iterations):
         logging.info(f"Start iteration {i + 1}")
 
-        data_processor = DataProcessor()
+       # data_processor = DataProcessor()
         # Part for changing the roughness
 
         # Part for import to stanet and callculate and export new CSV file
@@ -39,7 +43,8 @@ def main():
     console.setFormatter(formatter)
     logging.getLogger('').addHandler(console)
 
-
+    file_path = "C:\\Users\\d.muehlfeld\\weitere Daten\\14_Spechbach_RNAB.TXT"
+    process_file(file_path)
 
 
 if __name__ == '__main__':
