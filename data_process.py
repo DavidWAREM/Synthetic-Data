@@ -3,6 +3,7 @@ import logging
 import random
 import os
 
+
 class DataProcessor:
     def __init__(self, dataframe, original_file_path):
         """
@@ -16,38 +17,57 @@ class DataProcessor:
     def change_friction(self):
         logging.info("Starting to change friction values for rows where the first column is 'LEI'.")
         for idx, row in self.dataframe.iterrows():
-            if row.iloc[0] == 'LEI':
+            try:
+                # Accessing the first column by name
+                value = row['LEI']
+                logging.debug(f"Original value at index {idx}, column LEI: {value}")
+
+                # Check if the value can be converted to float
                 try:
-                    # Accessing the column by name
-                    column_name = row.index[7]
-                    value = self.dataframe.at[idx, column_name]
-                    logging.debug(f"Original value at index {idx}, column {column_name}: {value}")
-                    # Convert the value to float before multiplication
-                    value = float(value)
-                    new_value = value * random.uniform(0.3, 3)
-                    self.dataframe.at[idx, column_name] = new_value
-                    logging.debug(f"New value at index {idx}, column {column_name}: {new_value}")
-                except KeyError as e:
-                    logging.error(f"Column {row.index[7]} not found in DataFrame")
-                except ValueError as e:
-                    logging.error(f"Cannot convert value to float at index {idx} in column {column_name}: {e}")
+                    float_value = float(value)
+                except ValueError:
+                    logging.debug(f"Value at index {idx}, column LEI is not a float: {value}")
+                    continue  # Skip to the next row if value cannot be converted
 
-        # Define the directory and file name for saving the CSV
-        directory = "C:\\Users\\d.muehlfeld\\weitere Daten"
-        file_name = "test.csv"
-        full_path = os.path.join(directory, file_name)
-        logging.info(f"Saving modified DataFrame to {full_path}")
-        self.dataframe.to_csv(full_path, index=False, sep=";")
-        logging.info("DataFrame saved successfully.")
-        return self.dataframe
+                # Convert the value to float before multiplication
+                new_value = float_value * random.uniform(0.3, 3)
+                self.dataframe.at[idx, 'LEI'] = new_value
+                logging.debug(f"New value at index {idx}, column LEI: {new_value}")
+            except KeyError as e:
+                logging.error(f"Column LEI not found in DataFrame")
+            except ValueError as e:
+                logging.error(f"Cannot convert value to float at index {idx} in column LEI: {e}")
+
+    def write_dataframe_as_txt(self, i):
+        """
+        Writes the given DataFrame to a new text file with an incremented counter 'i' at the end of the file name.
+        """
+        # Extract directory and original file name
+        directory, original_file_name = os.path.split(self.original_file_path)
+        file_name, file_extension = os.path.splitext(original_file_name)
+
+        # Create new file name with counter 'i'
+        new_file_name = f"{file_name}_{i}{file_extension}"
+        new_file_path = os.path.join(directory, new_file_name)
+
+        logging.info(f"Writing DataFrame to new file: {new_file_path}")
+        try:
+            self.dataframe.to_csv(new_file_path, index=False, header=False, sep=';')
+            logging.debug("DataFrame written to file successfully")
+        except Exception as e:
+            logging.error(f"An error occurred while writing to file: {e}")
 
 
+# Example usage
+if __name__ == "__main__":
+    from data_loader import DataLoader
 
-# Define the directory and file path for loading the CSV
-file_path = "C:\\Users\\d.muehlfeld\\weitere Daten\\Leitungen.CSV"
-file_name
-logging.info(f"Loading data from {file_path}")
-data = pd.read_csv(file_path, sep=';', encoding='ISO-8859-1')
-logging.info("Data loaded successfully.")
-test = DataProcessor(data, file_path)
-test.change_friction()
+    file_path = "C:\\Users\\d.muehlfeld\\weitere Daten\\14_Spechbach_RNAB.TXT"
+    data_loader = DataLoader(file_path)
+    df = data_loader.read_txt()
+
+    if df is not None:
+        data_processor = DataProcessor(df, file_path)
+        data_processor.change_friction()
+        counter = 1  # You can change this to any integer value
+        data_processor.write_dataframe_as_txt(counter)

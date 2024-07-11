@@ -1,6 +1,9 @@
 import pandas as pd
 import logging
+import os
 
+# Set up logging configuration
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class DataLoader:
     def __init__(self, file_path):
@@ -8,6 +11,7 @@ class DataLoader:
         Initializes the DataLoader with the path to the text file.
         """
         self.file_path = file_path
+        self.dataframe = None  # Initialize the DataFrame as None
         logging.info(f"DataLoader initialized with file path: {file_path}")
 
     def read_txt(self):
@@ -22,10 +26,13 @@ class DataLoader:
                 logging.debug("File read into memory")
 
                 from io import StringIO
-                dataframe = pd.read_csv(StringIO(data))
+                self.dataframe = pd.read_csv(StringIO(data), delimiter=';', header=None)
                 logging.debug("Data parsed into DataFrame")
 
-                return dataframe
+                # Add column names if not present
+                self.dataframe.columns = ['LEI', 'Col2', 'Col3']
+
+                return self.dataframe
 
         except FileNotFoundError:
             logging.error(f"File not found: {self.file_path}")
@@ -33,4 +40,3 @@ class DataLoader:
         except Exception as e:
             logging.error(f"An error occurred: {e}")
             return None
-
