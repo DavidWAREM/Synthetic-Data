@@ -18,7 +18,6 @@ def process_file(file_path):
         data_processor = DataProcessor(df, file_path)
         data_processor.change_friction()
         data_processor.write_dataframe_as_txt(i)
-
         # Part for import to stanet and callculate and export new CSV file
 
 def main():

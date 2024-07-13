@@ -7,19 +7,13 @@ logging.basicConfig(filename='stanet_process.log', level=logging.INFO, format='%
 # Define the paths and filenames
 STANET_PATH = r"C:\Program Files\STANET\BIN\stanet64.exe"
 NETWORK_FILE = r' /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14_Spechbach_RNAB.STA"'
-
+IMPORT_DEFINITION = ' /X=".txt Rauheiten_Import"'
+TEXT_FILE = r' /F="C:\Users\d.muehlfeld\weitere Daten\14_Spechbach_RNAB_1.TXT"'
+EXPORT_DEFINITION = ' /Y="CSV"'
+EXPORT_FILE = r' /E="C:\Users\d.muehlfeld\weitere Daten\export_results.csv"'
 NO_USER_CONFIG = ' /NoUserConfig'
 NO_START_DIALOGS = ' /NoStartDlogs'
 CALCULATE = ' /B'
-
-K = r' /KD="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach"'
-
-
-subprocess.run(r"C:\Program Files\STANET\BIN\stanet64.exe" + NETWORK_FILE + K + ' /M' + ' /B')
-
-
-
-
 
 # Combine all parts into a single command
 command = (f'"{STANET_PATH}"'
@@ -47,4 +41,4 @@ def run_command(cmd):
         print(e.stderr.decode())
 
 # Run the command
-#(command)
+run_command(command)
