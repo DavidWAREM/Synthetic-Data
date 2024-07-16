@@ -6,17 +6,16 @@ logging.basicConfig(filename='stanet_process.log', level=logging.INFO, format='%
 
 # Define the paths and filenames
 STANET_PATH = r"C:\Program Files\STANET\BIN\stanet64.exe"
-NETWORK_FILE = r' /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14_Spechbach_RNAB.STA"'
+NETWORK_FILE = r' /N="C:\Users\mueda\OneDrive - Chalmers\_Chalmers_MA\MA_STANET\Rechennetzmodell_Wasser\Netz\EO_1.STA"'
 
 NO_USER_CONFIG = ' /NoUserConfig'
 NO_START_DIALOGS = ' /NoStartDlogs'
 CALCULATE = ' /B'
 
-K = r' /KD="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach"'
+K = r' /K="C:\Users\mueda\OneDrive - Chalmers\_Chalmers_MA\MA_STANET\Rechennetzmodell_Wasser\Config\STANET.INI"'
 
 
-subprocess.run(r"C:\Program Files\STANET\BIN\stanet64.exe" + NETWORK_FILE + K + ' /M' + ' /B')
-
+subprocess.run(r"C:\Program Files\STANET\BIN\stanet64.exe" + NETWORK_FILE + K + ' /T=3' +' /B')
 
 
 
