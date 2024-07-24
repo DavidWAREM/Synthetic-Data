@@ -6,14 +6,9 @@ logging.basicConfig(filename='stanet_process.log', level=logging.INFO, format='%
 
 # Define the paths and filenames
 STANET_PATH = r"C:\Program Files\STANET\BIN\stanet64.exe"
-NETWORK_FILE = r' /N="C:\Users\mueda\OneDrive - Chalmers\_Chalmers_MA\MA_STANET\Rechennetzmodell_Wasser\Netz\EO_1.STA"'
-
-NO_USER_CONFIG = ' /NoUserConfig'
-NO_START_DIALOGS = ' /NoStartDlogs'
+NETWORK_FILE = r' /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA"'
 CALCULATE = ' /B'
-
-K = r' /K="C:\Users\mueda\OneDrive - Chalmers\_Chalmers_MA\MA_STANET\Rechennetzmodell_Wasser\Config\STANET.INI"'
-
+K = r' /CONFIG="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach\\"'
 
 subprocess.run(r"C:\Program Files\STANET\BIN\stanet64.exe" + NETWORK_FILE + K + ' /T=3' +' /B')
 
@@ -21,16 +16,16 @@ subprocess.run(r"C:\Program Files\STANET\BIN\stanet64.exe" + NETWORK_FILE + K + 
 
 
 # Combine all parts into a single command
-command = (f'"{STANET_PATH}"'
-           f'{NETWORK_FILE}'
-           f'{NO_USER_CONFIG}'
-           f'{NO_START_DIALOGS}'
+#command = (f'"{STANET_PATH}"'
+   #        f'{NETWORK_FILE}'
+    #       f'{NO_USER_CONFIG}'
+     #      f'{NO_START_DIALOGS}'
         #    f'{IMPORT_DEFINITION}'
         #    f'{TEXT_FILE}'
         #    f'{EXPORT_DEFINITION}'
         #    f'{EXPORT_FILE}'
         #   f'{CALCULATE}')
-           )
+    #       )
 # Function to run the command and log the output
 def run_command(cmd):
     try:

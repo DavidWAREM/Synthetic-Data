@@ -6,26 +6,41 @@ logging.basicConfig(filename='stanet_process.log', level=logging.INFO, format='%
 
 # Define the paths and filenames
 STANET_PATH = r"C:\Program Files\STANET\BIN\stanet64.exe"
-NETWORK_FILE = r' /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14_Spechbach_RNAB.STA"'
-IMPORT_DEFINITION = ' /X=".txt Rauheiten_Import"'
-TEXT_FILE = r' /F="C:\Users\d.muehlfeld\weitere Daten\14_Spechbach_RNAB_1.TXT"'
+NETWORK_FILE = r' /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA"'
+CONFIG_FILE = r' /CONFIG="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach\\"'
+IMPORT_DEFINITION = ' /X="Import_Leitungen_Rauheiten_txt"'
+TEXT_FILE = r' /F="C:\Users\d.muehlfeld\weitere Daten\13_Spechbach_RNAB.TXT"'
 EXPORT_DEFINITION = ' /Y="CSV"'
 EXPORT_FILE = r' /E="C:\Users\d.muehlfeld\weitere Daten\export_results.csv"'
+CALCULATE = ' /B'
 NO_USER_CONFIG = ' /NoUserConfig'
 NO_START_DIALOGS = ' /NoStartDlogs'
-CALCULATE = ' /B'
 
 # Combine all parts into a single command
-command = (f'"{STANET_PATH}"'
+command_import = (f'"{STANET_PATH}"'
            f'{NETWORK_FILE}'
-           f'{NO_USER_CONFIG}'
-           f'{NO_START_DIALOGS}'
-        #    f'{IMPORT_DEFINITION}'
-        #    f'{TEXT_FILE}'
-        #    f'{EXPORT_DEFINITION}'
-        #    f'{EXPORT_FILE}'
-        #   f'{CALCULATE}')
-           )
+           f'{CONFIG_FILE}'
+           f'{IMPORT_DEFINITION}'
+           f'{TEXT_FILE}'
+            + ' /A'
+#           f'{NETWORK_FILE}'
+#           f'{EXPORT_DEFINITION}'
+ #          f'{EXPORT_FILE}'
+           f'{CALCULATE}')
+
+
+command_export = (f'"{STANET_PATH}"'
+           f'{NETWORK_FILE}'
+           f'{CONFIG_FILE}'
+#           f'{IMPORT_DEFINITION}'
+#           f'{TEXT_FILE}'
+#            + ' /A'
+#           f'{NETWORK_FILE}'
+           f'{EXPORT_DEFINITION}'
+           f'{EXPORT_FILE}'
+           f'{CALCULATE}')
+
+
 # Function to run the command and log the output
 def run_command(cmd):
     try:
@@ -41,4 +56,5 @@ def run_command(cmd):
         print(e.stderr.decode())
 
 # Run the command
-run_command(command)
+run_command(command_import)
+run_command(command_export)
