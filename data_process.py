@@ -15,28 +15,28 @@ class DataProcessor:
         logging.info(f"DataProcessor initialized with file: {original_file_path}")
 
     def change_friction(self):
-        logging.info("Starting to change friction values for rows where the first column is 'LEI'.")
+        logging.info("Starting to change friction values for rows where the first column is 'RAU'.")
         for idx, row in self.dataframe.iterrows():
             try:
                 # Accessing the first column by name
-                value = row['LEI']
-                logging.debug(f"Original value at index {idx}, column LEI: {value}")
+                value = row['RAU']
+                logging.debug(f"Original value at index {idx}, column RAU: {value}")
 
                 # Check if the value can be converted to float
                 try:
                     float_value = float(value)
                 except ValueError:
-                    logging.debug(f"Value at index {idx}, column LEI is not a float: {value}")
+                    logging.debug(f"Value at index {idx}, column RAU is not a float: {value}")
                     continue  # Skip to the next row if value cannot be converted
 
                 # Convert the value to float before multiplication
                 new_value = float_value * random.uniform(0.3, 3)
-                self.dataframe.at[idx, 'LEI'] = new_value
-                logging.debug(f"New value at index {idx}, column LEI: {new_value}")
+                self.dataframe.at[idx, 'RAU'] = new_value
+                logging.debug(f"New value at index {idx}, column RAU: {new_value}")
             except KeyError as e:
-                logging.error(f"Column LEI not found in DataFrame")
+                logging.error(f"Column RAU not found in DataFrame")
             except ValueError as e:
-                logging.error(f"Cannot convert value to float at index {idx} in column LEI: {e}")
+                logging.error(f"Cannot convert value to float at index {idx} in column RAU: {e}")
 
     def write_dataframe_as_txt(self, i):
         """
@@ -58,16 +58,4 @@ class DataProcessor:
             logging.error(f"An error occurred while writing to file: {e}")
 
 
-# Example usage
-if __name__ == "__main__":
-    from data_loader import DataLoader
 
-    file_path = "C:\\Users\\d.muehlfeld\\weitere Daten\\14_Spechbach_RNAB.TXT"
-    data_loader = DataLoader(file_path)
-    df = data_loader.read_txt()
-
-    if df is not None:
-        data_processor = DataProcessor(df, file_path)
-        data_processor.change_friction()
-        counter = 1  # You can change this to any integer value
-        data_processor.write_dataframe_as_txt(counter)

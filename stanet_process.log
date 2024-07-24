@@ -56,3 +56,15 @@
 2024-07-24 14:30:32,895 - INFO - 
 2024-07-24 14:30:48,169 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach\\" /Y="CSV" /E="C:\Users\d.muehlfeld\weitere Daten\export_results.csv" /B
 2024-07-24 14:30:48,170 - INFO - 
+2024-07-24 16:32:17,989 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach\\" /X="Import_Leitungen_Rauheiten_txt" /F="C:\Users\d.muehlfeld\weitere Daten\13_Spechbach_RNAB.TXT" /A /B
+2024-07-24 16:32:17,989 - INFO - 
+2024-07-24 16:32:30,841 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach\\" /Y="CSV" /E="C:\Users\d.muehlfeld\weitere Daten\export_results.csv" /B
+2024-07-24 16:32:30,841 - INFO - 
+2024-07-24 16:34:32,984 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach\\" /X="Import_Leitungen_Rauheiten_txt" /F="C:\Users\d.muehlfeld\weitere Daten\13_Spechbach_RNAB.TXT" /A /B /NoUserConfig /NoStartDlogs
+2024-07-24 16:34:32,984 - INFO - 
+2024-07-24 16:34:50,739 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach\\" /Y="CSV" /E="C:\Users\d.muehlfeld\weitere Daten\export_results.csv" /B /NoUserConfig /NoStartDlogs
+2024-07-24 16:34:50,739 - INFO - 
+2024-07-24 16:58:55,549 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach\\" /X="Import_Leitungen_Rauheiten_txt" /F="C:\Users\d.muehlfeld\weitere Daten\13_Spechbach_RNAB_1.TXT" /A /B
+2024-07-24 16:58:55,549 - INFO - 
+2024-07-24 16:59:11,883 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach\\" /Y="CSV" /E="C:\Users\d.muehlfeld\weitere Daten\export_results.csv" /B
+2024-07-24 16:59:11,883 - INFO - 
