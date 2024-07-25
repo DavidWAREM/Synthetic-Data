@@ -2,15 +2,16 @@ import subprocess
 import logging
 
 class StanetProcess:
-    def __init__(self, i):
+    def __init__(self, i, file_name):
         self.i = i
+        self.file_name = file_name
         self.STANET_PATH = r"C:\Program Files\STANET\BIN\stanet64.exe"
         self.NETWORK_FILE = r' /N="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA"'
         self.CONFIG_FILE = r' /CONFIG="C:\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach\\"'
         self.IMPORT_DEFINITION = ' /X="Import_Leitungen_Rauheiten_txt"'
-        self.TEXT_FILE = fr' /F="C:\Users\d.muehlfeld\weitere Daten\13_Spechbach_RNAB_{self.i}.TXT"'
+        self.TEXT_FILE = fr' /F="C:\Users\d.muehlfeld\weitere Daten\Synthetic_Data\13_Spechbach_RNAB_{self.i}.TXT"'
         self.EXPORT_DEFINITION = ' /Y="CSV"'
-        self.EXPORT_FILE = fr' /E="C:\Users\d.muehlfeld\weitere Daten\export_results_{self.i}.csv"'
+        self.EXPORT_FILE = fr' /E="C:\Users\d.muehlfeld\weitere Daten\Synthetic_Data\export_results_{self.file_name}_{self.i}.csv"'
         self.CALCULATE = ' /B'
 
         logging.basicConfig(filename='stanet_process.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

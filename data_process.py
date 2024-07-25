@@ -44,11 +44,15 @@ class DataProcessor:
         """
         # Extract directory and original file name
         directory, original_file_name = os.path.split(self.original_file_path)
-        file_name, file_extension = os.path.splitext(original_file_name)
+        synthetic_data_dir = os.path.join(directory, "Synthetic_Data")
+
+        # Create Synthetic_Data directory if it doesn't exist
+        os.makedirs(synthetic_data_dir, exist_ok=True)
 
         # Create new file name with counter 'i'
+        file_name, file_extension = os.path.splitext(original_file_name)
         new_file_name = f"{file_name}_{i}{file_extension}"
-        new_file_path = os.path.join(directory, new_file_name)
+        new_file_path = os.path.join(synthetic_data_dir, new_file_name)
 
         logging.info(f"Writing DataFrame to new file: {new_file_path}")
         try:
@@ -56,6 +60,3 @@ class DataProcessor:
             logging.debug("DataFrame written to file successfully")
         except Exception as e:
             logging.error(f"An error occurred while writing to file: {e}")
-
-
-

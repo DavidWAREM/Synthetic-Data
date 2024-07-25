@@ -4,33 +4,33 @@ from data_loader import DataLoader
 from data_process import DataProcessor
 from stanet_process import StanetProcess
 
-def process_file(file_path):
-    logging.info(f"Starting file processing")
+def process_file(file_path, file_name):
+    logging.info(f"Starting file processing for {file_name}")
 
     # Part for Import the data
     data_loader = DataLoader(file_path)
     df = data_loader.read_txt()
 
-    iterations = 2
+    iterations = 1
     for i in range(iterations):
-        logging.info(f"Start iteration {i}")
+        logging.info(f"Start iteration {i} for {file_name}")
 
         # Part for changing the roughness
-        logging.info(f"Changing friction for iteration {i}")
+        logging.info(f"Changing friction for iteration {i} for {file_name}")
         data_processor = DataProcessor(df, file_path)
         data_processor.change_friction()
-        logging.info(f"Writing modified data to text file for iteration {i}")
+        logging.info(f"Writing modified data to text file for iteration {i} for {file_name}")
         data_processor.write_dataframe_as_txt(i)
 
         # Part for import to stanet and calculate and export new CSV file
-        logging.info(f"Starting STANET import for iteration {i}")
-        stanet_processor = StanetProcess(i=i)
+        logging.info(f"Starting STANET import for iteration {i} for {file_name}")
+        stanet_processor = StanetProcess(i=i, file_name=file_name)
         stanet_processor.import_data()
 
-        logging.info(f"Starting STANET export for iteration {i}")
+        logging.info(f"Starting STANET export for iteration {i} for {file_name}")
         stanet_processor.export_data()
 
-        logging.info(f"Finished iteration {i}")
+        logging.info(f"Finished iteration {i} for {file_name}")
 
 def main():
     # Get the directory of the script being executed
@@ -63,8 +63,14 @@ def main():
     logging.getLogger('').addHandler(file_handler)
     logging.getLogger('').addHandler(console_handler)
 
-    file_path = "C:\\Users\\d.muehlfeld\\weitere Daten\\13_Spechbach_RNAB.TXT"
-    process_file(file_path)
+    # Directory containing the .txt files
+    directory_path = "C:\\Users\\d.muehlfeld\\weitere Daten"
+
+    # Process each .txt file in the directory
+    for file_name in os.listdir(directory_path):
+        if file_name.endswith(".TXT"):
+            file_path = os.path.join(directory_path, file_name)
+            process_file(file_path, file_name)
 
 if __name__ == '__main__':
     main()
