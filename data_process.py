@@ -16,7 +16,10 @@ class DataProcessor:
 
     def change_friction(self):
         logging.info("Starting to change friction values for rows where the first column is 'RAU'.")
-        for idx, row in self.dataframe.iterrows():
+        # Create a copy of the original dataframe
+        modified_dataframe = self.dataframe.copy()
+
+        for idx, row in modified_dataframe.iterrows():
             try:
                 # Accessing the first column by name
                 value = row['RAU']
@@ -31,14 +34,16 @@ class DataProcessor:
 
                 # Convert the value to float before multiplication
                 new_value = float_value * random.uniform(0.3, 3)
-                self.dataframe.at[idx, 'RAU'] = new_value
+                modified_dataframe.at[idx, 'RAU'] = new_value
                 logging.debug(f"New value at index {idx}, column RAU: {new_value}")
             except KeyError as e:
                 logging.error(f"Column RAU not found in DataFrame")
             except ValueError as e:
                 logging.error(f"Cannot convert value to float at index {idx} in column RAU: {e}")
 
-    def write_dataframe_as_txt(self, i):
+        return modified_dataframe
+
+    def write_dataframe_as_txt(self, dataframe, i):
         """
         Writes the given DataFrame to a new text file with an incremented counter 'i' at the end of the file name.
         """
@@ -51,12 +56,12 @@ class DataProcessor:
 
         # Create new file name with counter 'i'
         file_name, file_extension = os.path.splitext(original_file_name)
-        new_file_name = f"{file_name}_{i}{file_extension}"
+        new_file_name = f"{file_name}_{i}.txt"  # Ensure the extension is .txt
         new_file_path = os.path.join(synthetic_data_dir, new_file_name)
 
-        logging.info(f"Writing DataFrame to new file: {new_file_path}")
+        logging.info(f"Writing modified DataFrame to new file: {new_file_path}")
         try:
-            self.dataframe.to_csv(new_file_path, index=False, header=False, sep=';')
+            dataframe.to_csv(new_file_path, index=False, header=False, sep=';')
             logging.debug("DataFrame written to file successfully")
         except Exception as e:
             logging.error(f"An error occurred while writing to file: {e}")

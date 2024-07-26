@@ -1,28 +1,37 @@
 import logging
 import os
-from data_loader import DataLoader
-from data_process import DataProcessor
-from stanet_process import StanetProcess
+from data_loader import DataLoader  # Importing the DataLoader class from the data_loader module
+from data_process import DataProcessor  # Importing the DataProcessor class from the data_process module
+from stanet_process import StanetProcess  # Importing the StanetProcess class from the stanet_process module
+
 
 def process_file(file_path, file_name):
+    """
+    Process a single file: load data, modify it, and run STANET import and export.
+
+    :param file_path: Path to the input file
+    :param file_name: Name of the input file
+    """
     logging.info(f"Starting file processing for {file_name}")
 
-    # Part for Import the data
+    # Load the data from the text file
     data_loader = DataLoader(file_path)
     df = data_loader.read_txt()
 
-    iterations = 1
+    iterations = 1  # Number of iterations to process
     for i in range(iterations):
         logging.info(f"Start iteration {i} for {file_name}")
 
-        # Part for changing the roughness
+        # Change the roughness in the data
         logging.info(f"Changing friction for iteration {i} for {file_name}")
         data_processor = DataProcessor(df, file_path)
-        data_processor.change_friction()
-        logging.info(f"Writing modified data to text file for iteration {i} for {file_name}")
-        data_processor.write_dataframe_as_txt(i)
+        modified_df = data_processor.change_friction()  # Get the modified DataFrame
 
-        # Part for import to stanet and calculate and export new CSV file
+        # Write the modified data to a new text file
+        logging.info(f"Writing modified data to text file for iteration {i} for {file_name}")
+        data_processor.write_dataframe_as_txt(modified_df, i)  # Pass the modified DataFrame
+
+        # Import the modified data to STANET, run calculations, and export results to a CSV file
         logging.info(f"Starting STANET import for iteration {i} for {file_name}")
         stanet_processor = StanetProcess(i=i, file_name=file_name)
         stanet_processor.import_data()
@@ -32,7 +41,11 @@ def process_file(file_path, file_name):
 
         logging.info(f"Finished iteration {i} for {file_name}")
 
+
 def main():
+    """
+    Main function to set up logging, find .TXT files, and process each one.
+    """
     # Get the directory of the script being executed
     script_dir = os.path.dirname(os.path.abspath(__file__))
     log_file = os.path.join(script_dir, 'logging.log')
@@ -55,7 +68,7 @@ def main():
     console_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     console_handler.setFormatter(console_formatter)
 
-    # Remove all handlers associated with the root logger object.
+    # Remove all handlers associated with the root logger object
     for handler in logging.root.handlers[:]:
         logging.root.removeHandler(handler)
 
@@ -71,6 +84,7 @@ def main():
         if file_name.endswith(".TXT"):
             file_path = os.path.join(directory_path, file_name)
             process_file(file_path, file_name)
+
 
 if __name__ == '__main__':
     main()
