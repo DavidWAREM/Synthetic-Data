@@ -30,7 +30,7 @@ class DataLoader:
                 logging.debug("Data parsed into DataFrame")
 
                 # Add column names if not present
-                self.dataframe.columns = ['ANF', 'END', 'RAU']
+                self.dataframe.columns = ['STANET-ID', 'RAU']
 
                 return self.dataframe
 
