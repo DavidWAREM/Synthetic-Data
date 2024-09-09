@@ -56,9 +56,6 @@ class DataLoader:
                 self.dataframe = pd.read_csv(StringIO(data), delimiter=';', header=None)
                 logging.debug("Data parsed into DataFrame")  # Log when data is successfully parsed into a DataFrame.
 
-                # Assign column names to the DataFrame (if needed)
-                self.dataframe.columns = ['STANET-ID', 'RAU']
-
                 return self.dataframe
 
         # Error handling for when the file is not found.

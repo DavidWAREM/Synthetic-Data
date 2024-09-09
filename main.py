@@ -29,7 +29,7 @@ def process_file(file_path, file_name, start_number):
         # Modify the friction/roughness values in the DataFrame
         logging.info(f"Changing friction for iteration {i} (number {current_number}) for {file_name}")
         data_processor = DataProcessor(df, file_path)  # Initialize the DataProcessor class
-        modified_df = data_processor.change_friction()  # Apply the friction changes and get the modified DataFrame
+        modified_df = data_processor.change_last_value()  # Apply the friction changes and get the modified DataFrame
 
         # Write the modified data to a new text file
         logging.info(f"Writing modified data to text file for iteration {i} (number {current_number}) for {file_name}")
@@ -84,7 +84,7 @@ def main():
     logging.getLogger('').addHandler(console_handler)
 
     # Directory containing the .txt files to process
-    directory_path = "C:\\Users\\D.Muehlfeld\\Documents\\Synthetic_Data"
+    directory_path = "C:\\Users\\D.Muehlfeld\\Documents\\Synthetic_Data\\Synthetic_Data_Valve"
 
     # Define the starting number for iteration (this can be adjusted as needed)
     start_number = 0
