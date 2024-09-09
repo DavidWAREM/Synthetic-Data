@@ -1,57 +1,57 @@
-2024-09-09 17:02:07,701 - INFO - Starting file processing for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:07,702 - INFO - DataLoader initialized with file path: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:07,702 - INFO - Attempting to read file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:07,702 - DEBUG - File opened successfully
-2024-09-09 17:02:07,702 - DEBUG - File read into memory
-2024-09-09 17:02:07,706 - DEBUG - Data parsed into DataFrame
-2024-09-09 17:02:07,706 - INFO - Start iteration 0 (number 0) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:07,706 - INFO - Changing friction for iteration 0 (number 0) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:07,706 - INFO - DataProcessor initialized with file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:07,706 - INFO - Starting to change the last value in the third row of the DataFrame.
-2024-09-09 17:02:07,707 - DEBUG - Last value in the third row updated to: 50
-2024-09-09 17:02:07,707 - INFO - Writing modified data to text file for iteration 0 (number 0) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:07,707 - INFO - Writing modified DataFrame to new file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Synthetic_Data\Spechbach_RNAB_Valve_0.txt
-2024-09-09 17:02:07,709 - DEBUG - DataFrame written to file successfully
-2024-09-09 17:02:07,709 - INFO - Starting STANET import for iteration 0 (number 0) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:07,709 - INFO - Preparing to import data for number 0
-2024-09-09 17:02:07,709 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Schieber_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_0.TXT" /A /B
-2024-09-09 17:02:14,757 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Schieber_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_0.TXT" /A /B
-2024-09-09 17:02:14,757 - INFO - Starting STANET export for iteration 0 (number 0) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:14,757 - INFO - Preparing to export data for number 0
-2024-09-09 17:02:14,757 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\export_results_Spechbach_RNAB_Valve.TXT_0.csv" /B
-2024-09-09 17:02:19,563 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\export_results_Spechbach_RNAB_Valve.TXT_0.csv" /B
-2024-09-09 17:02:19,563 - INFO - Finished iteration 0 (number 0) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:19,563 - INFO - Start iteration 1 (number 1) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:19,563 - INFO - Changing friction for iteration 1 (number 1) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:19,563 - INFO - DataProcessor initialized with file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:19,563 - INFO - Starting to change the last value in the third row of the DataFrame.
-2024-09-09 17:02:19,563 - DEBUG - Last value in the third row updated to: 30
-2024-09-09 17:02:19,564 - INFO - Writing modified data to text file for iteration 1 (number 1) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:19,564 - INFO - Writing modified DataFrame to new file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Synthetic_Data\Spechbach_RNAB_Valve_1.txt
-2024-09-09 17:02:19,566 - DEBUG - DataFrame written to file successfully
-2024-09-09 17:02:19,566 - INFO - Starting STANET import for iteration 1 (number 1) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:19,566 - INFO - Preparing to import data for number 1
-2024-09-09 17:02:19,566 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Schieber_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_1.TXT" /A /B
-2024-09-09 17:02:25,684 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Schieber_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_1.TXT" /A /B
-2024-09-09 17:02:25,684 - INFO - Starting STANET export for iteration 1 (number 1) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:25,684 - INFO - Preparing to export data for number 1
-2024-09-09 17:02:25,684 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\export_results_Spechbach_RNAB_Valve.TXT_1.csv" /B
-2024-09-09 17:02:30,499 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\export_results_Spechbach_RNAB_Valve.TXT_1.csv" /B
-2024-09-09 17:02:30,500 - INFO - Finished iteration 1 (number 1) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:30,500 - INFO - Start iteration 2 (number 2) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:30,500 - INFO - Changing friction for iteration 2 (number 2) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:30,500 - INFO - DataProcessor initialized with file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:30,500 - INFO - Starting to change the last value in the third row of the DataFrame.
-2024-09-09 17:02:30,500 - DEBUG - Last value in the third row updated to: 10
-2024-09-09 17:02:30,500 - INFO - Writing modified data to text file for iteration 2 (number 2) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:30,500 - INFO - Writing modified DataFrame to new file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Synthetic_Data\Spechbach_RNAB_Valve_2.txt
-2024-09-09 17:02:30,502 - DEBUG - DataFrame written to file successfully
-2024-09-09 17:02:30,502 - INFO - Starting STANET import for iteration 2 (number 2) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:30,502 - INFO - Preparing to import data for number 2
-2024-09-09 17:02:30,502 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Schieber_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_2.TXT" /A /B
-2024-09-09 17:02:36,776 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Schieber_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_2.TXT" /A /B
-2024-09-09 17:02:36,777 - INFO - Starting STANET export for iteration 2 (number 2) for Spechbach_RNAB_Valve.TXT
-2024-09-09 17:02:36,777 - INFO - Preparing to export data for number 2
-2024-09-09 17:02:36,777 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\export_results_Spechbach_RNAB_Valve.TXT_2.csv" /B
-2024-09-09 17:02:41,570 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\export_results_Spechbach_RNAB_Valve.TXT_2.csv" /B
-2024-09-09 17:02:41,570 - INFO - Finished iteration 2 (number 2) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:17,019 - INFO - Starting file processing for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:17,019 - INFO - DataLoader initialized with file path: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:17,019 - INFO - Attempting to read file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:17,020 - DEBUG - File opened successfully
+2024-09-09 17:37:17,020 - DEBUG - File read into memory
+2024-09-09 17:37:17,023 - DEBUG - Data parsed into DataFrame
+2024-09-09 17:37:17,024 - INFO - Start iteration 0 (number 0) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:17,024 - INFO - Changing friction for iteration 0 (number 0) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:17,024 - INFO - DataProcessor initialized with file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:17,024 - INFO - Starting to change the last value in the third row of the DataFrame.
+2024-09-09 17:37:17,024 - DEBUG - Last value in the third row updated to: LEI00002362FD357ED955
+2024-09-09 17:37:17,024 - INFO - Writing modified data to text file for iteration 0 (number 0) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:17,024 - INFO - Writing modified DataFrame to new file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Synthetic_Data\Spechbach_RNAB_Valve_0.txt
+2024-09-09 17:37:17,027 - DEBUG - DataFrame written to file successfully
+2024-09-09 17:37:17,027 - INFO - Starting STANET import for iteration 0 (number 0) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:17,027 - INFO - Preparing to import data for number 0
+2024-09-09 17:37:17,028 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Schieber_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_0.TXT" /A /B
+2024-09-09 17:37:25,117 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Schieber_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_0.TXT" /A /B
+2024-09-09 17:37:25,117 - INFO - Starting STANET export for iteration 0 (number 0) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:25,117 - INFO - Preparing to export data for number 0
+2024-09-09 17:37:25,117 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\export_results_Spechbach_RNAB_Valve.TXT_0.csv" /B
+2024-09-09 17:37:30,014 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\export_results_Spechbach_RNAB_Valve.TXT_0.csv" /B
+2024-09-09 17:37:30,014 - INFO - Finished iteration 0 (number 0) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:30,014 - INFO - Start iteration 1 (number 1) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:30,014 - INFO - Changing friction for iteration 1 (number 1) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:30,014 - INFO - DataProcessor initialized with file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:30,014 - INFO - Starting to change the last value in the third row of the DataFrame.
+2024-09-09 17:37:30,014 - DEBUG - Last value in the third row updated to: LEI0000B862FD357EF561
+2024-09-09 17:37:30,016 - INFO - Writing modified data to text file for iteration 1 (number 1) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:30,016 - INFO - Writing modified DataFrame to new file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Synthetic_Data\Spechbach_RNAB_Valve_1.txt
+2024-09-09 17:37:30,017 - DEBUG - DataFrame written to file successfully
+2024-09-09 17:37:30,017 - INFO - Starting STANET import for iteration 1 (number 1) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:30,017 - INFO - Preparing to import data for number 1
+2024-09-09 17:37:30,017 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Schieber_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_1.TXT" /A /B
+2024-09-09 17:37:35,939 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Schieber_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_1.TXT" /A /B
+2024-09-09 17:37:35,939 - INFO - Starting STANET export for iteration 1 (number 1) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:35,939 - INFO - Preparing to export data for number 1
+2024-09-09 17:37:35,939 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\export_results_Spechbach_RNAB_Valve.TXT_1.csv" /B
+2024-09-09 17:37:40,583 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\export_results_Spechbach_RNAB_Valve.TXT_1.csv" /B
+2024-09-09 17:37:40,583 - INFO - Finished iteration 1 (number 1) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:40,583 - INFO - Start iteration 2 (number 2) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:40,583 - INFO - Changing friction for iteration 2 (number 2) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:40,583 - INFO - DataProcessor initialized with file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:40,583 - INFO - Starting to change the last value in the third row of the DataFrame.
+2024-09-09 17:37:40,584 - DEBUG - Last value in the third row updated to: LEI0000FB62FD357E02AE_1
+2024-09-09 17:37:40,584 - INFO - Writing modified data to text file for iteration 2 (number 2) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:40,584 - INFO - Writing modified DataFrame to new file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Synthetic_Data\Spechbach_RNAB_Valve_2.txt
+2024-09-09 17:37:40,586 - DEBUG - DataFrame written to file successfully
+2024-09-09 17:37:40,586 - INFO - Starting STANET import for iteration 2 (number 2) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:40,586 - INFO - Preparing to import data for number 2
+2024-09-09 17:37:40,586 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Schieber_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_2.TXT" /A /B
+2024-09-09 17:37:46,532 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Schieber_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_2.TXT" /A /B
+2024-09-09 17:37:46,533 - INFO - Starting STANET export for iteration 2 (number 2) for Spechbach_RNAB_Valve.TXT
+2024-09-09 17:37:46,533 - INFO - Preparing to export data for number 2
+2024-09-09 17:37:46,533 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\export_results_Spechbach_RNAB_Valve.TXT_2.csv" /B
+2024-09-09 17:37:51,272 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\export_results_Spechbach_RNAB_Valve.TXT_2.csv" /B
+2024-09-09 17:37:51,272 - INFO - Finished iteration 2 (number 2) for Spechbach_RNAB_Valve.TXT
