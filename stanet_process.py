@@ -97,7 +97,8 @@ class StanetProcess:
                           f'{self.CONFIG_FILE}'
                           f'{self.EXPORT_DEFINITION}'
                           f'{self.EXPORT_FILE}'
-                          f'{self.CALCULATE}')  # Calculation flag to run calculations after export
+                          f'{self.CALCULATE}'
+                          f' /MET=04:00')  # Calculation flag to run calculations after export
 
         logging.info(
             f"Preparing to export data for number {self.current_number}")  # Log the start of the export process
