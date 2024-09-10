@@ -21,7 +21,7 @@ class StanetProcess:
         self.STANET_PATH = r"C:\Program Files\STANET\BIN\stanet64.exe"
 
         # Path to the STANET network file that will be used for calculations
-        self.NETWORK_FILE = r' /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA"'
+        self.NETWORK_FILE = r' /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Valve.STA"'
 
         # Path to the configuration file that STANET will use
         self.CONFIG_FILE = r' /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach"'
