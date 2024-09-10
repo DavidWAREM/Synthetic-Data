@@ -30,13 +30,13 @@ class StanetProcess:
         self.IMPORT_DEFINITION = ' /X="Leitungen_Rauheiten_txt"'
 
         # Path to the specific text file that will be imported into STANET, dynamically built using current_number
-        self.TEXT_FILE = fr' /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\13_Spechbach_RNAB_{self.current_number}.TXT"'
+        self.TEXT_FILE = fr' /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data\Spechbach_RNAB_{self.current_number}.TXT"'
 
         # Export definition, specifies how STANET should export the data
         self.EXPORT_DEFINITION = ' /Y="CSV"'
 
         # Path to the CSV export file, dynamically named using current_number and file_name for uniqueness
-        self.EXPORT_FILE = fr' /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\export_results_{self.file_name}_{self.current_number}.csv"'
+        self.EXPORT_FILE = fr' /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\SyntheticData-Spechbach_Roughness_{self.current_number}.csv"'
 
         # This flag tells STANET to perform calculations after importing or exporting
         self.CALCULATE = ' /B'
