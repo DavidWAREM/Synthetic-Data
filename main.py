@@ -84,7 +84,7 @@ def main():
     logging.getLogger('').addHandler(console_handler)
 
     # Directory containing the .txt files to process
-    directory_path = "C:\\Users\\D.Muehlfeld\\Documents\\Synthetic_Data"
+    directory_path = "C:\\Users\\D.Muehlfeld\\Documents\\Synthetic_Data\\Synthetic_Data_Roughness"
 
     # Define the starting number for iteration (this can be adjusted as needed)
     start_number = 0

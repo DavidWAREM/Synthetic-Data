@@ -89,7 +89,7 @@ class DataProcessor:
         """
         # Extract the directory path and the original file name.
         directory, original_file_name = os.path.split(self.original_file_path)
-        synthetic_data_dir = os.path.join(directory, "Synthetic_Data")
+        synthetic_data_dir = os.path.join(directory, "Import Data")
 
         # Create the 'Synthetic_Data' directory if it doesn't already exist.
         os.makedirs(synthetic_data_dir, exist_ok=True)

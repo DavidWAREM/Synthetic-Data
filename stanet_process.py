@@ -21,7 +21,7 @@ class StanetProcess:
         self.STANET_PATH = r"C:\Program Files\STANET\BIN\stanet64.exe"
 
         # Path to the STANET network file that will be used for calculations
-        self.NETWORK_FILE = r' /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\14.1_Spechbach_RNAB.STA"'
+        self.NETWORK_FILE = r' /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Roughness.STA"'
 
         # Path to the configuration file that STANET will use
         self.CONFIG_FILE = r' /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach"'
@@ -30,13 +30,13 @@ class StanetProcess:
         self.IMPORT_DEFINITION = ' /X="Leitungen_Rauheiten_txt"'
 
         # Path to the specific text file that will be imported into STANET, dynamically built using current_number
-        self.TEXT_FILE = fr' /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data\Spechbach_RNAB_{self.current_number}.TXT"'
+        self.TEXT_FILE = fr' /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_RNAB_{self.current_number}.TXT"'
 
         # Export definition, specifies how STANET should export the data
         self.EXPORT_DEFINITION = ' /Y="CSV"'
 
         # Path to the CSV export file, dynamically named using current_number and file_name for uniqueness
-        self.EXPORT_FILE = fr' /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\SyntheticData-Spechbach_Roughness_{self.current_number}.csv"'
+        self.EXPORT_FILE = fr' /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Roughness_{self.current_number}.csv"'
 
         # This flag tells STANET to perform calculations after importing or exporting
         self.CALCULATE = ' /B'
