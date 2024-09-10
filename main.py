@@ -19,7 +19,7 @@ def process_file(file_path, file_name, start_number):
     data_loader = DataLoader(file_path)
     df = data_loader.read_txt()  # Load the data into a DataFrame
 
-    iterations = 3  # Number of iterations for processing each file
+    iterations = 1  # Number of iterations for processing each file
     current_number = start_number  # Start from the specified number
 
     # Loop over the defined number of iterations (in this case, 3 iterations)
