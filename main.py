@@ -24,7 +24,8 @@ def process_file(file_path, file_name, start_number):
 
     # Loop over the defined number of iterations (in this case, 3 iterations)
     for i in range(iterations):
-        logging.info(f"Start iteration {i} (number {current_number}) for {file_name}")  # Log the start of each iteration
+        logging.info(
+            f"Start iteration {i} (number {current_number}) for {file_name}")  # Log the start of each iteration
 
         # Modify the friction/roughness values in the DataFrame
         logging.info(f"Changing friction for iteration {i} (number {current_number}) for {file_name}")
@@ -35,18 +36,30 @@ def process_file(file_path, file_name, start_number):
         logging.info(f"Writing modified data to text file for iteration {i} (number {current_number}) for {file_name}")
         data_processor.write_dataframe_as_txt(modified_df, current_number)  # Save the modified DataFrame to a file
 
-        # Interact with STANET: Import the modified data, run calculations, and export the results to a CSV
-        logging.info(f"Starting STANET import for iteration {i} (number {current_number}) for {file_name}")
-        stanet_processor = StanetProcess(current_number=current_number, file_name=file_name)  # Initialize the StanetProcess class
-        stanet_processor.import_data()  # Import the modified data into STANET
+        # First: Interact with STANET without load
+        logging.info(f"Starting STANET import for iteration {i} (number {current_number}) without load for {file_name}")
+        stanet_processor_without_load = StanetProcess(current_number=current_number, file_name=file_name,
+                                                      with_load=False)  # Initialize StanetProcess without load
+        stanet_processor_without_load.import_data()  # Import the modified data into STANET without load
 
-        logging.info(f"Starting STANET export for iteration {i} (number {current_number}) for {file_name}")
-        stanet_processor.export_data()  # Export the processed data from STANET to a CSV
+        logging.info(f"Starting STANET export for iteration {i} (number {current_number}) without load for {file_name}")
+        stanet_processor_without_load.export_data()  # Export the processed data from STANET without load
 
-        logging.info(f"Finished iteration {i} (number {current_number}) for {file_name}")  # Log the end of the iteration
+        # Then: Interact with STANET with load
+        logging.info(f"Starting STANET import for iteration {i} (number {current_number}) with load for {file_name}")
+        stanet_processor_with_load = StanetProcess(current_number=current_number, file_name=file_name,
+                                                   with_load=True)  # Initialize StanetProcess with load
+        stanet_processor_with_load.import_data()  # Import the modified data into STANET with load
+
+        logging.info(f"Starting STANET export for iteration {i} (number {current_number}) with load for {file_name}")
+        stanet_processor_with_load.export_data()  # Export the processed data from STANET with load
+
+        logging.info(
+            f"Finished iteration {i} (number {current_number}) for {file_name}")  # Log the end of the iteration
 
         # Increment the current number for the next iteration or next file
         current_number += 1
+
 
 # The main function sets up the logging, finds the text files to process, and iterates over them.
 def main():

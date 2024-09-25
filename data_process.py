@@ -59,7 +59,7 @@ class DataProcessor:
                     continue
 
                 # If numeric, multiply the value by a random float between 0.3 and 3.
-                new_value = float_value * random.uniform(0.3, 3)
+                new_value = random.uniform(0.01, 5)
                 # Update the value in the DataFrame at the corresponding index.
                 modified_dataframe.at[idx, 'RAU'] = new_value
                 logging.debug(f"New value at index {idx}, column RAU: {new_value}")
