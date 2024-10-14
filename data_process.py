@@ -49,79 +49,39 @@ value_series = [
 # modifying the last value in the third row and saving the modified DataFrame as a new text file.
 class DataProcessor:
     def __init__(self, dataframe, original_file_path):
-        """
-        Initializes the DataProcessor class.
-
-        :param dataframe: The DataFrame that contains the data to be processed.
-        :param original_file_path: The file path of the original text file, used for file saving operations.
-
-        Attributes:
-        - dataframe: Stores the provided DataFrame for further manipulation.
-        - original_file_path: Stores the path to the original file, which will be used to determine the save location.
-
-        Logs the initialization process, including the original file path.
-        """
         self.dataframe = dataframe
         self.original_file_path = original_file_path
         logging.info(f"DataProcessor initialized with file: {original_file_path}")
 
     def change_last_value(self):
-        """
-        Modifies the last value in the third row of the DataFrame with a random value from the provided value series.
+        logging.info("Starting to change the value in the first row, second column of the DataFrame.")
 
-        Steps:
-        1. Ensure the DataFrame has at least three rows.
-        2. Replace the last value of the third row with a random choice from the value series list.
-
-        Returns:
-        - A modified DataFrame with the updated third row's last value.
-        """
-        logging.info("Starting to change the last value in the third row of the DataFrame.")
-
-        # Ensure the DataFrame has at least three rows.
-        if len(self.dataframe) > 2:
-            # Replace the last value of the third row with a random value from the value series list.
+        # Ensure the DataFrame has at least one row and two columns.
+        if len(self.dataframe) > 0 and len(self.dataframe.columns) > 1:
+            # Replace the value of the first row, second column with a random value from the value series list.
             random_value = random.choice(value_series)
-            self.dataframe.iloc[2, -1] = random_value
-            logging.debug(f"Last value in the third row updated to: {random_value}")
+            self.dataframe.iloc[0, 1] = random_value  # First row (index 0), second column (index 1)
+            logging.debug(f"Value in the first row, second column updated to: {random_value}")
         else:
-            logging.warning("DataFrame has less than three rows; no changes made.")
+            logging.warning("DataFrame does not have enough rows or columns; no changes made.")
 
         return self.dataframe
 
     def write_dataframe_as_txt(self, dataframe, current_number):
-        """
-        Writes the modified DataFrame to a new text file, appending a counter (current_number) to the file name.
-
-        Steps:
-        1. Extract the directory and original file name from the original file path.
-        2. Create a new directory called 'Synthetic_Data' inside the original file's directory.
-        3. Generate a new file name by appending the current_number to the original file name.
-        4. Save the modified DataFrame as a text file (.txt) in the 'Synthetic_Data' directory.
-
-        :param dataframe: The DataFrame to be written to the file.
-        :param current_number: An integer that will be appended to the file name for uniqueness.
-        """
-        # Extract the directory path and the original file name.
         directory, original_file_name = os.path.split(self.original_file_path)
         synthetic_data_dir = os.path.join(directory, "Import Data")
 
-        # Create the 'Synthetic_Data' directory if it doesn't already exist.
         os.makedirs(synthetic_data_dir, exist_ok=True)
 
-        # Split the original file name into name and extension, then append current_number to create a new name.
         file_name, file_extension = os.path.splitext(original_file_name)
-        new_file_name = f"{file_name}_{current_number}.txt"  # Ensure the new file has a .txt extension.
+        new_file_name = f"{file_name}_{current_number}.txt"
         new_file_path = os.path.join(synthetic_data_dir, new_file_name)
 
         logging.info(f"Writing modified DataFrame to new file: {new_file_path}")
 
         try:
-            # Write the DataFrame to a new text file, with no header and using ';' as the delimiter.
             dataframe.to_csv(new_file_path, index=False, header=False, sep=';')
             logging.debug("DataFrame written to file successfully")
-
-        # Catch any errors that occur during the file writing process and log them.
         except Exception as e:
             logging.error(f"An error occurred while writing to file: {e}")
 
@@ -130,14 +90,10 @@ def main():
     input_file = 'input.csv'  # Path to the input file
     output_counter = 1  # Counter for the output file
 
-    # Read the DataFrame
     dataframe = pd.read_csv(input_file)
     processor = DataProcessor(dataframe, input_file)
 
-    # Change the last value of the third row
     modified_dataframe = processor.change_last_value()
-
-    # Write the DataFrame to a text file
     processor.write_dataframe_as_txt(modified_dataframe, output_counter)
 
 

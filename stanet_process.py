@@ -1,33 +1,38 @@
 import subprocess
 import logging
 
-
 # This class interacts with the STANET software by constructing and executing command-line calls
 class StanetProcess:
-    def __init__(self, current_number, file_name):
+    def __init__(self, current_number, file_name, with_load=False):
         """
         Initializes the StanetProcess class.
 
         :param current_number: The current iteration number, used to create unique file names.
         :param file_name: The name of the input file, used for logging and exporting results.
+        :param with_load: Boolean flag to determine whether to use files with load or without load.
 
         The constructor sets paths and parameters for the STANET executable, network file, import/export definitions,
         and other configurations. It also sets up logging to record the execution of commands.
         """
         self.current_number = current_number  # The iteration number to uniquely identify files
         self.file_name = file_name  # Name of the input file used in logging and exporting
+        self.with_load = with_load  # Flag to determine whether to use network with load or without load
 
         # Path to the STANET executable
         self.STANET_PATH = r"C:\Program Files\STANET\BIN\stanet64.exe"
 
-        # Path to the STANET network file that will be used for calculations
-        self.NETWORK_FILE = r' /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Valve.STA"'
+        # Paths to the STANET network files, depending on the with_load flag
+        self.NETWORK_FILE_without_load = r' /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Valve_without_load.STA"'
+        self.NETWORK_FILE_with_load = r' /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Valve_with_load.STA"'
+
+        # Select the correct network file based on the with_load flag
+        self.NETWORK_FILE = self.NETWORK_FILE_with_load if self.with_load else self.NETWORK_FILE_without_load
 
         # Path to the configuration file that STANET will use
         self.CONFIG_FILE = r' /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach"'
 
         # Import definition, used to specify how STANET should import data
-        self.IMPORT_DEFINITION = ' /X="Leitungen_Schieber_txt"'
+        self.IMPORT_DEFINITION = ' /X="Leitungen_Valve_txt"'
 
         # Path to the specific text file that will be imported into STANET, dynamically built using current_number
         self.TEXT_FILE = fr' /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\Import Data\Spechbach_RNAB_Valve_{self.current_number}.TXT"'
@@ -35,8 +40,12 @@ class StanetProcess:
         # Export definition, specifies how STANET should export the data
         self.EXPORT_DEFINITION = ' /Y="CSV"'
 
-        # Path to the CSV export file, dynamically named using current_number and file_name for uniqueness
-        self.EXPORT_FILE = fr' /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\SyntheticData-Spechbach_Valve_{self.current_number}.csv"'
+        # Paths to the CSV export files, depending on the with_load flag
+        self.EXPORT_FILE_without_load = fr' /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\SyntheticData-Spechbach_Valve_without_load_{self.current_number}.csv"'
+        self.EXPORT_FILE_with_load = fr' /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Valve\SyntheticData-Spechbach_Valve_with_load_{self.current_number}.csv"'
+
+        # Select the correct export file based on the with_load flag
+        self.EXPORT_FILE = self.EXPORT_FILE_with_load if self.with_load else self.EXPORT_FILE_without_load
 
         # This flag tells STANET to perform calculations after importing or exporting
         self.CALCULATE = ' /B'
@@ -98,7 +107,7 @@ class StanetProcess:
                           f'{self.EXPORT_DEFINITION}'
                           f'{self.EXPORT_FILE}'
                           f'{self.CALCULATE}'
-                          f' /MET=04:00')  # Calculation flag to run calculations after export
+                          f' /MED=04:00')  # Calculation flag to run calculations after export
 
         logging.info(
             f"Preparing to export data for number {self.current_number}")  # Log the start of the export process
