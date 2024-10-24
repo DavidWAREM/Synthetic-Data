@@ -1,734 +1,202 @@
-2024-09-25 10:04:44,450 - INFO - Starting file processing for Spechbach_RNAB.TXT
-2024-09-25 10:04:44,450 - INFO - DataLoader initialized with file path: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\Spechbach_RNAB.TXT
-2024-09-25 10:04:44,450 - INFO - Attempting to read file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\Spechbach_RNAB.TXT
-2024-09-25 10:04:44,451 - DEBUG - File opened successfully
-2024-09-25 10:04:44,451 - DEBUG - File read into memory
-2024-09-25 10:04:44,455 - DEBUG - Data parsed into DataFrame
-2024-09-25 10:04:44,455 - INFO - Start iteration 0 (number 0) for Spechbach_RNAB.TXT
-2024-09-25 10:04:44,455 - INFO - Changing friction for iteration 0 (number 0) for Spechbach_RNAB.TXT
-2024-09-25 10:04:44,455 - INFO - DataProcessor initialized with file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\Spechbach_RNAB.TXT
-2024-09-25 10:04:44,455 - INFO - Starting to change friction values for rows where the first column is 'RAU'.
-2024-09-25 10:04:44,456 - DEBUG - Original value at index 0, column RAU: 2.2136
-2024-09-25 10:04:44,456 - DEBUG - New value at index 0, column RAU: 4.028199045561114
-2024-09-25 10:04:44,456 - DEBUG - Original value at index 1, column RAU: 1.5913
-2024-09-25 10:04:44,456 - DEBUG - New value at index 1, column RAU: 1.2801395989324986
-2024-09-25 10:04:44,456 - DEBUG - Original value at index 2, column RAU: 5.0357
-2024-09-25 10:04:44,456 - DEBUG - New value at index 2, column RAU: 2.0291755203377164
-2024-09-25 10:04:44,456 - DEBUG - Original value at index 3, column RAU: 3.5614
-2024-09-25 10:04:44,456 - DEBUG - New value at index 3, column RAU: 2.4739094495302947
-2024-09-25 10:04:44,456 - DEBUG - Original value at index 4, column RAU: 1.7012
-2024-09-25 10:04:44,456 - DEBUG - New value at index 4, column RAU: 1.6825472699340116
-2024-09-25 10:04:44,456 - DEBUG - Original value at index 5, column RAU: 3.8842
-2024-09-25 10:04:44,456 - DEBUG - New value at index 5, column RAU: 2.560620494896391
-2024-09-25 10:04:44,456 - DEBUG - Original value at index 6, column RAU: 7.9643
-2024-09-25 10:04:44,456 - DEBUG - New value at index 6, column RAU: 0.136597528187215
-2024-09-25 10:04:44,456 - DEBUG - Original value at index 7, column RAU: 11.5335
-2024-09-25 10:04:44,456 - DEBUG - New value at index 7, column RAU: 0.4293385835738019
-2024-09-25 10:04:44,456 - DEBUG - Original value at index 8, column RAU: 2.6998
-2024-09-25 10:04:44,456 - DEBUG - New value at index 8, column RAU: 3.780509211162166
-2024-09-25 10:04:44,456 - DEBUG - Original value at index 9, column RAU: 0.8015
-2024-09-25 10:04:44,456 - DEBUG - New value at index 9, column RAU: 0.45090097473657675
-2024-09-25 10:04:44,456 - DEBUG - Original value at index 10, column RAU: 1.6852
-2024-09-25 10:04:44,456 - DEBUG - New value at index 10, column RAU: 2.6713798983633055
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 11, column RAU: 4.8446
-2024-09-25 10:04:44,457 - DEBUG - New value at index 11, column RAU: 2.503890978896956
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 12, column RAU: 22.9799
-2024-09-25 10:04:44,457 - DEBUG - New value at index 12, column RAU: 0.4979701603254243
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 13, column RAU: 1.8711
-2024-09-25 10:04:44,457 - DEBUG - New value at index 13, column RAU: 2.713537397425966
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 14, column RAU: 5.9294
-2024-09-25 10:04:44,457 - DEBUG - New value at index 14, column RAU: 4.8952882440758385
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 15, column RAU: 2.668
-2024-09-25 10:04:44,457 - DEBUG - New value at index 15, column RAU: 3.2460969111804427
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 16, column RAU: 1.7486
-2024-09-25 10:04:44,457 - DEBUG - New value at index 16, column RAU: 1.8294392984126129
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 17, column RAU: 2.7296
-2024-09-25 10:04:44,457 - DEBUG - New value at index 17, column RAU: 0.9503827986012999
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 18, column RAU: 21.1881
-2024-09-25 10:04:44,457 - DEBUG - New value at index 18, column RAU: 4.728480261482104
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 19, column RAU: 2.9385
-2024-09-25 10:04:44,457 - DEBUG - New value at index 19, column RAU: 4.1810870856746565
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 20, column RAU: 24.8096
-2024-09-25 10:04:44,457 - DEBUG - New value at index 20, column RAU: 2.0573507595308627
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 21, column RAU: 2.1645
-2024-09-25 10:04:44,457 - DEBUG - New value at index 21, column RAU: 1.0721082565484474
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 22, column RAU: 55.4473
-2024-09-25 10:04:44,457 - DEBUG - New value at index 22, column RAU: 4.418058300022546
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 23, column RAU: 1.8354
-2024-09-25 10:04:44,457 - DEBUG - New value at index 23, column RAU: 2.59978062583551
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 24, column RAU: 1.1811
-2024-09-25 10:04:44,457 - DEBUG - New value at index 24, column RAU: 2.0468848787496303
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 25, column RAU: 1.6221
-2024-09-25 10:04:44,457 - DEBUG - New value at index 25, column RAU: 2.8773004249680416
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 26, column RAU: 30.3581
-2024-09-25 10:04:44,457 - DEBUG - New value at index 26, column RAU: 0.02352661225751551
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 27, column RAU: 5.5166
-2024-09-25 10:04:44,457 - DEBUG - New value at index 27, column RAU: 0.09738734533673689
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 28, column RAU: 15.1568
-2024-09-25 10:04:44,457 - DEBUG - New value at index 28, column RAU: 1.0123830670778815
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 29, column RAU: 4.9322
-2024-09-25 10:04:44,457 - DEBUG - New value at index 29, column RAU: 0.3845506755260247
-2024-09-25 10:04:44,457 - DEBUG - Original value at index 30, column RAU: 2.4943
-2024-09-25 10:04:44,457 - DEBUG - New value at index 30, column RAU: 1.9167225507980692
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 31, column RAU: 3.2604
-2024-09-25 10:04:44,459 - DEBUG - New value at index 31, column RAU: 0.41565236162989827
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 32, column RAU: 0.3389
-2024-09-25 10:04:44,459 - DEBUG - New value at index 32, column RAU: 0.9841187224236572
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 33, column RAU: 0.6026
-2024-09-25 10:04:44,459 - DEBUG - New value at index 33, column RAU: 3.726009708789704
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 34, column RAU: 16.0971
-2024-09-25 10:04:44,459 - DEBUG - New value at index 34, column RAU: 1.987697767394067
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 35, column RAU: 3.2802
-2024-09-25 10:04:44,459 - DEBUG - New value at index 35, column RAU: 3.5752332714959807
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 36, column RAU: 5.1255
-2024-09-25 10:04:44,459 - DEBUG - New value at index 36, column RAU: 4.494953541969294
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 37, column RAU: 5.2404
-2024-09-25 10:04:44,459 - DEBUG - New value at index 37, column RAU: 1.839976567631194
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 38, column RAU: 3.0378
-2024-09-25 10:04:44,459 - DEBUG - New value at index 38, column RAU: 3.415496809067174
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 39, column RAU: 1.5881
-2024-09-25 10:04:44,459 - DEBUG - New value at index 39, column RAU: 2.346576152982891
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 40, column RAU: 1.4345
-2024-09-25 10:04:44,459 - DEBUG - New value at index 40, column RAU: 0.5365483560132569
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 41, column RAU: 0.9385
-2024-09-25 10:04:44,459 - DEBUG - New value at index 41, column RAU: 3.2461434500785677
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 42, column RAU: 1.4441
-2024-09-25 10:04:44,459 - DEBUG - New value at index 42, column RAU: 1.7184286925540135
-2024-09-25 10:04:44,459 - DEBUG - Original value at index 43, column RAU: 4.0338
-2024-09-25 10:04:44,460 - DEBUG - New value at index 43, column RAU: 4.361899942758926
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 44, column RAU: 1.2352
-2024-09-25 10:04:44,460 - DEBUG - New value at index 44, column RAU: 0.1763504589497848
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 45, column RAU: 0.0933
-2024-09-25 10:04:44,460 - DEBUG - New value at index 45, column RAU: 2.0748283940908068
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 46, column RAU: 1.6115
-2024-09-25 10:04:44,460 - DEBUG - New value at index 46, column RAU: 1.2325508262113685
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 47, column RAU: 1.6615
-2024-09-25 10:04:44,460 - DEBUG - New value at index 47, column RAU: 4.580028637325917
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 48, column RAU: 1.7693
-2024-09-25 10:04:44,460 - DEBUG - New value at index 48, column RAU: 2.4268612894454917
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 49, column RAU: 1.3279
-2024-09-25 10:04:44,460 - DEBUG - New value at index 49, column RAU: 4.43096884778975
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 50, column RAU: 1.7918
-2024-09-25 10:04:44,460 - DEBUG - New value at index 50, column RAU: 4.780855509480814
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 51, column RAU: 0.6923
-2024-09-25 10:04:44,460 - DEBUG - New value at index 51, column RAU: 2.1163704941891033
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 52, column RAU: 1.0334
-2024-09-25 10:04:44,460 - DEBUG - New value at index 52, column RAU: 1.7013056679622502
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 53, column RAU: 33.7278
-2024-09-25 10:04:44,460 - DEBUG - New value at index 53, column RAU: 2.8862406299977446
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 54, column RAU: 19.9137
-2024-09-25 10:04:44,460 - DEBUG - New value at index 54, column RAU: 3.6718455885733
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 55, column RAU: 0.5174
-2024-09-25 10:04:44,460 - DEBUG - New value at index 55, column RAU: 3.5777638071500757
-2024-09-25 10:04:44,460 - DEBUG - Original value at index 56, column RAU: 13.1714
-2024-09-25 10:04:44,460 - DEBUG - New value at index 56, column RAU: 3.950347268080015
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 57, column RAU: 11.3364
-2024-09-25 10:04:44,461 - DEBUG - New value at index 57, column RAU: 3.9828759370443847
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 58, column RAU: 1.8038
-2024-09-25 10:04:44,461 - DEBUG - New value at index 58, column RAU: 4.426337863757204
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 59, column RAU: 28.4158
-2024-09-25 10:04:44,461 - DEBUG - New value at index 59, column RAU: 4.005843939924748
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 60, column RAU: 0.4314
-2024-09-25 10:04:44,461 - DEBUG - New value at index 60, column RAU: 3.800219543861561
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 61, column RAU: 0.0969
-2024-09-25 10:04:44,461 - DEBUG - New value at index 61, column RAU: 1.5805316826490237
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 62, column RAU: 1.5226
-2024-09-25 10:04:44,461 - DEBUG - New value at index 62, column RAU: 0.4860902001170039
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 63, column RAU: 0.8299
-2024-09-25 10:04:44,461 - DEBUG - New value at index 63, column RAU: 0.35596477280539424
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 64, column RAU: 2.1246
-2024-09-25 10:04:44,461 - DEBUG - New value at index 64, column RAU: 3.349526051245654
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 65, column RAU: 2.4985
-2024-09-25 10:04:44,461 - DEBUG - New value at index 65, column RAU: 2.4602467528569485
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 66, column RAU: 7.3229
-2024-09-25 10:04:44,461 - DEBUG - New value at index 66, column RAU: 2.375237057935929
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 67, column RAU: 0.176
-2024-09-25 10:04:44,461 - DEBUG - New value at index 67, column RAU: 2.6794072301456735
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 68, column RAU: 13.5352
-2024-09-25 10:04:44,461 - DEBUG - New value at index 68, column RAU: 3.002512697462863
-2024-09-25 10:04:44,461 - DEBUG - Original value at index 69, column RAU: 1.4242
-2024-09-25 10:04:44,461 - DEBUG - New value at index 69, column RAU: 4.567846286795887
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 70, column RAU: 14.2261
-2024-09-25 10:04:44,462 - DEBUG - New value at index 70, column RAU: 4.86115138143772
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 71, column RAU: 7.4539
-2024-09-25 10:04:44,462 - DEBUG - New value at index 71, column RAU: 1.4563792885943172
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 72, column RAU: 0.0526
-2024-09-25 10:04:44,462 - DEBUG - New value at index 72, column RAU: 2.5528552771772803
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 73, column RAU: 3.5204
-2024-09-25 10:04:44,462 - DEBUG - New value at index 73, column RAU: 2.835781475027157
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 74, column RAU: 0.7244
-2024-09-25 10:04:44,462 - DEBUG - New value at index 74, column RAU: 3.948034546865848
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 75, column RAU: 0.8487
-2024-09-25 10:04:44,462 - DEBUG - New value at index 75, column RAU: 1.7257083025492357
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 76, column RAU: 0.1374
-2024-09-25 10:04:44,462 - DEBUG - New value at index 76, column RAU: 4.812442214621514
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 77, column RAU: 1.8489
-2024-09-25 10:04:44,462 - DEBUG - New value at index 77, column RAU: 2.972980289081288
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 78, column RAU: 0.226
-2024-09-25 10:04:44,462 - DEBUG - New value at index 78, column RAU: 4.195110719047818
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 79, column RAU: 12.285
-2024-09-25 10:04:44,462 - DEBUG - New value at index 79, column RAU: 4.689907672397897
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 80, column RAU: 5.4934
-2024-09-25 10:04:44,462 - DEBUG - New value at index 80, column RAU: 0.7054590137494747
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 81, column RAU: 3.5059
-2024-09-25 10:04:44,462 - DEBUG - New value at index 81, column RAU: 0.10517878479170159
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 82, column RAU: 5.7827
-2024-09-25 10:04:44,462 - DEBUG - New value at index 82, column RAU: 3.223117605677839
-2024-09-25 10:04:44,462 - DEBUG - Original value at index 83, column RAU: 1.4596
-2024-09-25 10:04:44,462 - DEBUG - New value at index 83, column RAU: 2.763921017809526
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 84, column RAU: 2.5303
-2024-09-25 10:04:44,463 - DEBUG - New value at index 84, column RAU: 4.975172876125935
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 85, column RAU: 0.5641
-2024-09-25 10:04:44,463 - DEBUG - New value at index 85, column RAU: 2.768330478462792
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 86, column RAU: 3.2177
-2024-09-25 10:04:44,463 - DEBUG - New value at index 86, column RAU: 1.3454071681817907
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 87, column RAU: 3.5587
-2024-09-25 10:04:44,463 - DEBUG - New value at index 87, column RAU: 0.8235720770771051
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 88, column RAU: 2.7466
-2024-09-25 10:04:44,463 - DEBUG - New value at index 88, column RAU: 2.31623325949587
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 89, column RAU: 2.3715
-2024-09-25 10:04:44,463 - DEBUG - New value at index 89, column RAU: 2.6979983520647957
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 90, column RAU: 4.9938
-2024-09-25 10:04:44,463 - DEBUG - New value at index 90, column RAU: 2.675329289010312
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 91, column RAU: 4.2733
-2024-09-25 10:04:44,463 - DEBUG - New value at index 91, column RAU: 3.943870624961806
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 92, column RAU: 6.1435
-2024-09-25 10:04:44,463 - DEBUG - New value at index 92, column RAU: 1.7481145859660066
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 93, column RAU: 0.9139
-2024-09-25 10:04:44,463 - DEBUG - New value at index 93, column RAU: 4.967238643733092
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 94, column RAU: 3.8901
-2024-09-25 10:04:44,463 - DEBUG - New value at index 94, column RAU: 3.4622215636003526
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 95, column RAU: 4.9193
-2024-09-25 10:04:44,463 - DEBUG - New value at index 95, column RAU: 0.5105275719944252
-2024-09-25 10:04:44,463 - DEBUG - Original value at index 96, column RAU: 0.478
-2024-09-25 10:04:44,464 - DEBUG - New value at index 96, column RAU: 0.17329124814774466
-2024-09-25 10:04:44,464 - DEBUG - Original value at index 97, column RAU: 0.4816
-2024-09-25 10:04:44,464 - DEBUG - New value at index 97, column RAU: 3.8050959775911606
-2024-09-25 10:04:44,464 - DEBUG - Original value at index 98, column RAU: 1.8749
-2024-09-25 10:04:44,464 - DEBUG - New value at index 98, column RAU: 2.381849069715207
-2024-09-25 10:04:44,464 - DEBUG - Original value at index 99, column RAU: 4.5031
-2024-09-25 10:04:44,464 - DEBUG - New value at index 99, column RAU: 3.0090736140032655
-2024-09-25 10:04:44,464 - DEBUG - Original value at index 100, column RAU: 1.083
-2024-09-25 10:04:44,464 - DEBUG - New value at index 100, column RAU: 1.1255680656970988
-2024-09-25 10:04:44,464 - DEBUG - Original value at index 101, column RAU: 0.9341
-2024-09-25 10:04:44,464 - DEBUG - New value at index 101, column RAU: 0.6636243004911078
-2024-09-25 10:04:44,464 - DEBUG - Original value at index 102, column RAU: 1.1211
-2024-09-25 10:04:44,464 - DEBUG - New value at index 102, column RAU: 2.955706115837033
-2024-09-25 10:04:44,464 - DEBUG - Original value at index 103, column RAU: 33.4522
-2024-09-25 10:04:44,464 - DEBUG - New value at index 103, column RAU: 2.729789430488346
-2024-09-25 10:04:44,464 - DEBUG - Original value at index 104, column RAU: 3.3296
-2024-09-25 10:04:44,464 - DEBUG - New value at index 104, column RAU: 1.0440863032042675
-2024-09-25 10:04:44,464 - DEBUG - Original value at index 105, column RAU: 2.8002
-2024-09-25 10:04:44,464 - DEBUG - New value at index 105, column RAU: 4.73433927553793
-2024-09-25 10:04:44,464 - DEBUG - Original value at index 106, column RAU: 18.7937
-2024-09-25 10:04:44,464 - DEBUG - New value at index 106, column RAU: 1.315038545656077
-2024-09-25 10:04:44,464 - DEBUG - Original value at index 107, column RAU: 4.9385
-2024-09-25 10:04:44,464 - DEBUG - New value at index 107, column RAU: 2.1323251314116414
-2024-09-25 10:04:44,464 - DEBUG - Original value at index 108, column RAU: 17.4661
-2024-09-25 10:04:44,464 - DEBUG - New value at index 108, column RAU: 0.664271249514591
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 109, column RAU: 29.3171
-2024-09-25 10:04:44,465 - DEBUG - New value at index 109, column RAU: 2.5356586548281648
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 110, column RAU: 3.955
-2024-09-25 10:04:44,465 - DEBUG - New value at index 110, column RAU: 3.8146407134783864
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 111, column RAU: 0.8453
-2024-09-25 10:04:44,465 - DEBUG - New value at index 111, column RAU: 3.084601769728965
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 112, column RAU: 12.3281
-2024-09-25 10:04:44,465 - DEBUG - New value at index 112, column RAU: 4.083350244750473
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 113, column RAU: 10.6745
-2024-09-25 10:04:44,465 - DEBUG - New value at index 113, column RAU: 2.997881331705236
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 114, column RAU: 22.3514
-2024-09-25 10:04:44,465 - DEBUG - New value at index 114, column RAU: 4.266772731128812
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 115, column RAU: 10.3243
-2024-09-25 10:04:44,465 - DEBUG - New value at index 115, column RAU: 2.4320485039690993
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 116, column RAU: 109.4784
-2024-09-25 10:04:44,465 - DEBUG - New value at index 116, column RAU: 4.1363733601604125
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 117, column RAU: 1.2142
-2024-09-25 10:04:44,465 - DEBUG - New value at index 117, column RAU: 1.854774677370948
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 118, column RAU: 0.3439
-2024-09-25 10:04:44,465 - DEBUG - New value at index 118, column RAU: 4.298705521818011
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 119, column RAU: 0.2156
-2024-09-25 10:04:44,465 - DEBUG - New value at index 119, column RAU: 1.4956470686858334
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 120, column RAU: 1.9823
-2024-09-25 10:04:44,465 - DEBUG - New value at index 120, column RAU: 0.4896346238832141
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 121, column RAU: 0.2328
-2024-09-25 10:04:44,465 - DEBUG - New value at index 121, column RAU: 3.0869174327390554
-2024-09-25 10:04:44,465 - DEBUG - Original value at index 122, column RAU: 0.401
-2024-09-25 10:04:44,465 - DEBUG - New value at index 122, column RAU: 0.12638469611677222
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 123, column RAU: 0.092
-2024-09-25 10:04:44,466 - DEBUG - New value at index 123, column RAU: 4.4617117909344435
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 124, column RAU: 0.7842
-2024-09-25 10:04:44,466 - DEBUG - New value at index 124, column RAU: 4.119345154099318
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 125, column RAU: 2.6426
-2024-09-25 10:04:44,466 - DEBUG - New value at index 125, column RAU: 3.684741121530946
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 126, column RAU: 0.228
-2024-09-25 10:04:44,466 - DEBUG - New value at index 126, column RAU: 2.556590226281404
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 127, column RAU: 2.0643
-2024-09-25 10:04:44,466 - DEBUG - New value at index 127, column RAU: 3.391699725456265
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 128, column RAU: 2.6824
-2024-09-25 10:04:44,466 - DEBUG - New value at index 128, column RAU: 0.8235195434497634
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 129, column RAU: 0.659
-2024-09-25 10:04:44,466 - DEBUG - New value at index 129, column RAU: 3.919005556009624
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 130, column RAU: 0.2628
-2024-09-25 10:04:44,466 - DEBUG - New value at index 130, column RAU: 4.738094790244765
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 131, column RAU: 2.1323
-2024-09-25 10:04:44,466 - DEBUG - New value at index 131, column RAU: 2.5901908696193368
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 132, column RAU: 1.7753
-2024-09-25 10:04:44,466 - DEBUG - New value at index 132, column RAU: 3.453586394050598
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 133, column RAU: 2.674
-2024-09-25 10:04:44,466 - DEBUG - New value at index 133, column RAU: 3.141166022020765
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 134, column RAU: 1.6142
-2024-09-25 10:04:44,466 - DEBUG - New value at index 134, column RAU: 3.1444736436823804
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 135, column RAU: 0.8041
-2024-09-25 10:04:44,466 - DEBUG - New value at index 135, column RAU: 3.677425768426075
-2024-09-25 10:04:44,466 - DEBUG - Original value at index 136, column RAU: 1.0946
-2024-09-25 10:04:44,467 - DEBUG - New value at index 136, column RAU: 4.919547221232338
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 137, column RAU: 1.5652
-2024-09-25 10:04:44,467 - DEBUG - New value at index 137, column RAU: 1.9822050177814041
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 138, column RAU: 0.6584
-2024-09-25 10:04:44,467 - DEBUG - New value at index 138, column RAU: 3.7789512770172244
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 139, column RAU: 0.4802
-2024-09-25 10:04:44,467 - DEBUG - New value at index 139, column RAU: 3.75766629389285
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 140, column RAU: 0.5794
-2024-09-25 10:04:44,467 - DEBUG - New value at index 140, column RAU: 1.3958627998092075
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 141, column RAU: 0.316
-2024-09-25 10:04:44,467 - DEBUG - New value at index 141, column RAU: 4.562734277029396
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 142, column RAU: 4.0353
-2024-09-25 10:04:44,467 - DEBUG - New value at index 142, column RAU: 4.662923941017492
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 143, column RAU: 5.4629
-2024-09-25 10:04:44,467 - DEBUG - New value at index 143, column RAU: 4.927141909349014
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 144, column RAU: 0.1229
-2024-09-25 10:04:44,467 - DEBUG - New value at index 144, column RAU: 2.394698259979354
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 145, column RAU: 0.1734
-2024-09-25 10:04:44,467 - DEBUG - New value at index 145, column RAU: 4.2290939916725625
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 146, column RAU: 3.053
-2024-09-25 10:04:44,467 - DEBUG - New value at index 146, column RAU: 1.068315035121237
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 147, column RAU: 3.6582
-2024-09-25 10:04:44,467 - DEBUG - New value at index 147, column RAU: 3.3601264729204523
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 148, column RAU: 0.1658
-2024-09-25 10:04:44,467 - DEBUG - New value at index 148, column RAU: 1.4523514769980832
-2024-09-25 10:04:44,467 - DEBUG - Original value at index 149, column RAU: 4.5246
-2024-09-25 10:04:44,467 - DEBUG - New value at index 149, column RAU: 1.1702235496285203
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 150, column RAU: 4.7276
-2024-09-25 10:04:44,468 - DEBUG - New value at index 150, column RAU: 3.3295444660135534
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 151, column RAU: 2.3123
-2024-09-25 10:04:44,468 - DEBUG - New value at index 151, column RAU: 4.355908864494027
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 152, column RAU: 1.6734
-2024-09-25 10:04:44,468 - DEBUG - New value at index 152, column RAU: 1.6042606638478885
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 153, column RAU: 8.3439
-2024-09-25 10:04:44,468 - DEBUG - New value at index 153, column RAU: 1.9746093217966025
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 154, column RAU: 4.3096
-2024-09-25 10:04:44,468 - DEBUG - New value at index 154, column RAU: 3.218464335836205
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 155, column RAU: 4.9328
-2024-09-25 10:04:44,468 - DEBUG - New value at index 155, column RAU: 4.855307176924512
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 156, column RAU: 0.836
-2024-09-25 10:04:44,468 - DEBUG - New value at index 156, column RAU: 2.335633340705997
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 157, column RAU: 0.6287
-2024-09-25 10:04:44,468 - DEBUG - New value at index 157, column RAU: 1.739389853876042
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 158, column RAU: 1.4904
-2024-09-25 10:04:44,468 - DEBUG - New value at index 158, column RAU: 4.365709590372281
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 159, column RAU: 1.3613
-2024-09-25 10:04:44,468 - DEBUG - New value at index 159, column RAU: 3.847926117431423
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 160, column RAU: 2.4161
-2024-09-25 10:04:44,468 - DEBUG - New value at index 160, column RAU: 0.23126691746423453
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 161, column RAU: 1.43
-2024-09-25 10:04:44,468 - DEBUG - New value at index 161, column RAU: 4.06515399177592
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 162, column RAU: 3.2239
-2024-09-25 10:04:44,468 - DEBUG - New value at index 162, column RAU: 1.2784020779144025
-2024-09-25 10:04:44,468 - DEBUG - Original value at index 163, column RAU: 0.0444
-2024-09-25 10:04:44,469 - DEBUG - New value at index 163, column RAU: 2.75546664567216
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 164, column RAU: 5.0383
-2024-09-25 10:04:44,469 - DEBUG - New value at index 164, column RAU: 4.0263406907414145
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 165, column RAU: 0.0908
-2024-09-25 10:04:44,469 - DEBUG - New value at index 165, column RAU: 3.614754484721813
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 166, column RAU: 1.6131
-2024-09-25 10:04:44,469 - DEBUG - New value at index 166, column RAU: 0.35733205638490956
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 167, column RAU: 1.5579
-2024-09-25 10:04:44,469 - DEBUG - New value at index 167, column RAU: 1.8846971487614912
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 168, column RAU: 4.5021
-2024-09-25 10:04:44,469 - DEBUG - New value at index 168, column RAU: 2.4396469994799967
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 169, column RAU: 0.0774
-2024-09-25 10:04:44,469 - DEBUG - New value at index 169, column RAU: 4.663840309482545
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 170, column RAU: 1.2919
-2024-09-25 10:04:44,469 - DEBUG - New value at index 170, column RAU: 3.1286179920237216
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 171, column RAU: 3.0939
-2024-09-25 10:04:44,469 - DEBUG - New value at index 171, column RAU: 4.798930471038515
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 172, column RAU: 1.6605
-2024-09-25 10:04:44,469 - DEBUG - New value at index 172, column RAU: 3.3565006327901474
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 173, column RAU: 5.858
-2024-09-25 10:04:44,469 - DEBUG - New value at index 173, column RAU: 4.406832741078598
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 174, column RAU: 1.6909
-2024-09-25 10:04:44,469 - DEBUG - New value at index 174, column RAU: 4.8061626655512235
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 175, column RAU: 1.2636
-2024-09-25 10:04:44,469 - DEBUG - New value at index 175, column RAU: 3.4732415607040257
-2024-09-25 10:04:44,469 - DEBUG - Original value at index 176, column RAU: 0.3753
-2024-09-25 10:04:44,469 - DEBUG - New value at index 176, column RAU: 1.5690182746184556
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 177, column RAU: 5.4683
-2024-09-25 10:04:44,470 - DEBUG - New value at index 177, column RAU: 3.1299141909027637
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 178, column RAU: 3.5836
-2024-09-25 10:04:44,470 - DEBUG - New value at index 178, column RAU: 3.655548399136608
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 179, column RAU: 2.8376
-2024-09-25 10:04:44,470 - DEBUG - New value at index 179, column RAU: 2.4558112341546594
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 180, column RAU: 2.0741
-2024-09-25 10:04:44,470 - DEBUG - New value at index 180, column RAU: 4.124860844061742
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 181, column RAU: 2.7378
-2024-09-25 10:04:44,470 - DEBUG - New value at index 181, column RAU: 4.4720766095857405
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 182, column RAU: 3.968
-2024-09-25 10:04:44,470 - DEBUG - New value at index 182, column RAU: 3.919653187380401
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 183, column RAU: 2.0115
-2024-09-25 10:04:44,470 - DEBUG - New value at index 183, column RAU: 3.8799481087249617
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 184, column RAU: 0.7755
-2024-09-25 10:04:44,470 - DEBUG - New value at index 184, column RAU: 4.46716961625256
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 185, column RAU: 63.0185
-2024-09-25 10:04:44,470 - DEBUG - New value at index 185, column RAU: 0.5727197090888945
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 186, column RAU: 0.5756
-2024-09-25 10:04:44,470 - DEBUG - New value at index 186, column RAU: 4.754969688114132
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 187, column RAU: 1.2124
-2024-09-25 10:04:44,470 - DEBUG - New value at index 187, column RAU: 1.2842451548360152
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 188, column RAU: 4.8638
-2024-09-25 10:04:44,470 - DEBUG - New value at index 188, column RAU: 4.8194516314247
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 189, column RAU: 21.3633
-2024-09-25 10:04:44,470 - DEBUG - New value at index 189, column RAU: 0.7449758462265459
-2024-09-25 10:04:44,470 - DEBUG - Original value at index 190, column RAU: 3.0553
-2024-09-25 10:04:44,470 - DEBUG - New value at index 190, column RAU: 1.9370363681585219
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 191, column RAU: 1.4269
-2024-09-25 10:04:44,471 - DEBUG - New value at index 191, column RAU: 4.50243488242273
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 192, column RAU: 3.6653
-2024-09-25 10:04:44,471 - DEBUG - New value at index 192, column RAU: 3.6327908742928954
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 193, column RAU: 0.1885
-2024-09-25 10:04:44,471 - DEBUG - New value at index 193, column RAU: 0.9377669308802555
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 194, column RAU: 4.5983
-2024-09-25 10:04:44,471 - DEBUG - New value at index 194, column RAU: 1.5549959768970807
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 195, column RAU: 0.2346
-2024-09-25 10:04:44,471 - DEBUG - New value at index 195, column RAU: 2.095587037602715
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 196, column RAU: 2.5238
-2024-09-25 10:04:44,471 - DEBUG - New value at index 196, column RAU: 0.02653366966733639
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 197, column RAU: 4.0631
-2024-09-25 10:04:44,471 - DEBUG - New value at index 197, column RAU: 2.5226755524779425
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 198, column RAU: 4.9173
-2024-09-25 10:04:44,471 - DEBUG - New value at index 198, column RAU: 2.1907923160130833
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 199, column RAU: 2.6963
-2024-09-25 10:04:44,471 - DEBUG - New value at index 199, column RAU: 2.14979917794761
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 200, column RAU: 1.996
-2024-09-25 10:04:44,471 - DEBUG - New value at index 200, column RAU: 1.6991467731632237
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 201, column RAU: 1.9621
-2024-09-25 10:04:44,471 - DEBUG - New value at index 201, column RAU: 4.241310048080383
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 202, column RAU: 0.3759
-2024-09-25 10:04:44,471 - DEBUG - New value at index 202, column RAU: 1.398796588738041
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 203, column RAU: 0.7915
-2024-09-25 10:04:44,471 - DEBUG - New value at index 203, column RAU: 4.785900005228644
-2024-09-25 10:04:44,471 - DEBUG - Original value at index 204, column RAU: 5.2502
-2024-09-25 10:04:44,472 - DEBUG - New value at index 204, column RAU: 2.112058505153463
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 205, column RAU: 0.3544
-2024-09-25 10:04:44,472 - DEBUG - New value at index 205, column RAU: 3.5244182112910507
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 206, column RAU: 1.1075
-2024-09-25 10:04:44,472 - DEBUG - New value at index 206, column RAU: 3.7844252929415148
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 207, column RAU: 0.6131
-2024-09-25 10:04:44,472 - DEBUG - New value at index 207, column RAU: 0.05820015988525458
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 208, column RAU: 0.3395
-2024-09-25 10:04:44,472 - DEBUG - New value at index 208, column RAU: 1.9291291318371615
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 209, column RAU: 3.4725
-2024-09-25 10:04:44,472 - DEBUG - New value at index 209, column RAU: 4.374540688823366
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 210, column RAU: 0.5402
-2024-09-25 10:04:44,472 - DEBUG - New value at index 210, column RAU: 3.3951614893591118
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 211, column RAU: 1.2618
-2024-09-25 10:04:44,472 - DEBUG - New value at index 211, column RAU: 3.863900551080362
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 212, column RAU: 1.0942
-2024-09-25 10:04:44,472 - DEBUG - New value at index 212, column RAU: 4.9339940760708725
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 213, column RAU: 1.2922
-2024-09-25 10:04:44,472 - DEBUG - New value at index 213, column RAU: 3.887818496578861
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 214, column RAU: 0.8581
-2024-09-25 10:04:44,472 - DEBUG - New value at index 214, column RAU: 2.846541083404689
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 215, column RAU: 0.4739
-2024-09-25 10:04:44,472 - DEBUG - New value at index 215, column RAU: 4.261433896323282
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 216, column RAU: 1.3766
-2024-09-25 10:04:44,472 - DEBUG - New value at index 216, column RAU: 3.3741264842619305
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 217, column RAU: 2.7094
-2024-09-25 10:04:44,472 - DEBUG - New value at index 217, column RAU: 3.623409013665799
-2024-09-25 10:04:44,472 - DEBUG - Original value at index 218, column RAU: 0.8462
-2024-09-25 10:04:44,472 - DEBUG - New value at index 218, column RAU: 3.3287635328773955
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 219, column RAU: 0.6773
-2024-09-25 10:04:44,473 - DEBUG - New value at index 219, column RAU: 0.26644519919875775
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 220, column RAU: 0.1641
-2024-09-25 10:04:44,473 - DEBUG - New value at index 220, column RAU: 0.7348384503028103
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 221, column RAU: 1.1945
-2024-09-25 10:04:44,473 - DEBUG - New value at index 221, column RAU: 0.5927129580201741
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 222, column RAU: 2.5023
-2024-09-25 10:04:44,473 - DEBUG - New value at index 222, column RAU: 2.1084457655672932
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 223, column RAU: 0.223
-2024-09-25 10:04:44,473 - DEBUG - New value at index 223, column RAU: 0.3016854941180609
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 224, column RAU: 0.6435
-2024-09-25 10:04:44,473 - DEBUG - New value at index 224, column RAU: 3.7054142849870564
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 225, column RAU: 1.9023
-2024-09-25 10:04:44,473 - DEBUG - New value at index 225, column RAU: 1.9115066673992767
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 226, column RAU: 1.5677
-2024-09-25 10:04:44,473 - DEBUG - New value at index 226, column RAU: 2.8859131070606496
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 227, column RAU: 2.8853
-2024-09-25 10:04:44,473 - DEBUG - New value at index 227, column RAU: 2.5942015247531294
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 228, column RAU: 1.5182
-2024-09-25 10:04:44,473 - DEBUG - New value at index 228, column RAU: 3.172875448881117
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 229, column RAU: 0.8986
-2024-09-25 10:04:44,473 - DEBUG - New value at index 229, column RAU: 4.033198882507128
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 230, column RAU: 4.0161
-2024-09-25 10:04:44,473 - DEBUG - New value at index 230, column RAU: 0.6848917031151497
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 231, column RAU: 1.2833
-2024-09-25 10:04:44,473 - DEBUG - New value at index 231, column RAU: 3.841318948780853
-2024-09-25 10:04:44,473 - DEBUG - Original value at index 232, column RAU: 4.6182
-2024-09-25 10:04:44,474 - DEBUG - New value at index 232, column RAU: 0.6266167520393131
-2024-09-25 10:04:44,474 - DEBUG - Original value at index 233, column RAU: 4.4823
-2024-09-25 10:04:44,474 - DEBUG - New value at index 233, column RAU: 1.7056338099065191
-2024-09-25 10:04:44,474 - DEBUG - Original value at index 234, column RAU: 2.0205
-2024-09-25 10:04:44,474 - DEBUG - New value at index 234, column RAU: 0.7325395860727294
-2024-09-25 10:04:44,474 - DEBUG - Original value at index 235, column RAU: 1.5171
-2024-09-25 10:04:44,474 - DEBUG - New value at index 235, column RAU: 1.2659397473761616
-2024-09-25 10:04:44,474 - DEBUG - Original value at index 236, column RAU: 2.3327
-2024-09-25 10:04:44,474 - DEBUG - New value at index 236, column RAU: 0.29408670607499104
-2024-09-25 10:04:44,474 - DEBUG - Original value at index 237, column RAU: 4.3739
-2024-09-25 10:04:44,474 - DEBUG - New value at index 237, column RAU: 3.1200714190421173
-2024-09-25 10:04:44,474 - DEBUG - Original value at index 238, column RAU: 1.6015
-2024-09-25 10:04:44,474 - DEBUG - New value at index 238, column RAU: 3.8034930509555083
-2024-09-25 10:04:44,474 - DEBUG - Original value at index 239, column RAU: 0.3957
-2024-09-25 10:04:44,474 - DEBUG - New value at index 239, column RAU: 2.7554398653987566
-2024-09-25 10:04:44,474 - DEBUG - Original value at index 240, column RAU: 1.0926
-2024-09-25 10:04:44,474 - DEBUG - New value at index 240, column RAU: 2.678137730120727
-2024-09-25 10:04:44,474 - DEBUG - Original value at index 241, column RAU: 4.5555
-2024-09-25 10:04:44,474 - DEBUG - New value at index 241, column RAU: 4.576193734214394
-2024-09-25 10:04:44,474 - DEBUG - Original value at index 242, column RAU: 1.2157
-2024-09-25 10:04:44,474 - DEBUG - New value at index 242, column RAU: 0.405302205438714
-2024-09-25 10:04:44,474 - DEBUG - Original value at index 243, column RAU: 2.9866
-2024-09-25 10:04:44,474 - DEBUG - New value at index 243, column RAU: 1.6484788649147348
-2024-09-25 10:04:44,474 - DEBUG - Original value at index 244, column RAU: 0.5939
-2024-09-25 10:04:44,474 - DEBUG - New value at index 244, column RAU: 0.08981131317641682
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 245, column RAU: 1.5553
-2024-09-25 10:04:44,475 - DEBUG - New value at index 245, column RAU: 1.8656681329877376
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 246, column RAU: 2.5916
-2024-09-25 10:04:44,475 - DEBUG - New value at index 246, column RAU: 4.600197850228262
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 247, column RAU: 0.7636
-2024-09-25 10:04:44,475 - DEBUG - New value at index 247, column RAU: 4.903593667223937
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 248, column RAU: 5.7286
-2024-09-25 10:04:44,475 - DEBUG - New value at index 248, column RAU: 2.955360158282737
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 249, column RAU: 3.4445
-2024-09-25 10:04:44,475 - DEBUG - New value at index 249, column RAU: 3.4554546662616046
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 250, column RAU: 4.8782
-2024-09-25 10:04:44,475 - DEBUG - New value at index 250, column RAU: 3.385684808606455
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 251, column RAU: 2.9651
-2024-09-25 10:04:44,475 - DEBUG - New value at index 251, column RAU: 3.0593548014440852
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 252, column RAU: 0.2355
-2024-09-25 10:04:44,475 - DEBUG - New value at index 252, column RAU: 2.0752637835092353
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 253, column RAU: 10.2421
-2024-09-25 10:04:44,475 - DEBUG - New value at index 253, column RAU: 1.538172644371493
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 254, column RAU: 0.7572
-2024-09-25 10:04:44,475 - DEBUG - New value at index 254, column RAU: 4.378090828647914
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 255, column RAU: 6.2802
-2024-09-25 10:04:44,475 - DEBUG - New value at index 255, column RAU: 4.876922138120011
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 256, column RAU: 2.9416
-2024-09-25 10:04:44,475 - DEBUG - New value at index 256, column RAU: 2.4547442516917615
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 257, column RAU: 0.624
-2024-09-25 10:04:44,475 - DEBUG - New value at index 257, column RAU: 3.6124055640655253
-2024-09-25 10:04:44,475 - DEBUG - Original value at index 258, column RAU: 0.132
-2024-09-25 10:04:44,476 - DEBUG - New value at index 258, column RAU: 2.421908177544933
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 259, column RAU: 0.2215
-2024-09-25 10:04:44,476 - DEBUG - New value at index 259, column RAU: 4.499524672769142
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 260, column RAU: 0.1285
-2024-09-25 10:04:44,476 - DEBUG - New value at index 260, column RAU: 2.784651941820839
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 261, column RAU: 0.3079
-2024-09-25 10:04:44,476 - DEBUG - New value at index 261, column RAU: 3.352415246043731
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 262, column RAU: 2.2836
-2024-09-25 10:04:44,476 - DEBUG - New value at index 262, column RAU: 3.035014522428786
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 263, column RAU: 3.1986
-2024-09-25 10:04:44,476 - DEBUG - New value at index 263, column RAU: 2.913292286409947
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 264, column RAU: 1.2795
-2024-09-25 10:04:44,476 - DEBUG - New value at index 264, column RAU: 4.680852781040664
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 265, column RAU: 2.4913
-2024-09-25 10:04:44,476 - DEBUG - New value at index 265, column RAU: 4.028667600584533
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 266, column RAU: 1.7431
-2024-09-25 10:04:44,476 - DEBUG - New value at index 266, column RAU: 3.4208970161355357
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 267, column RAU: 1.7035
-2024-09-25 10:04:44,476 - DEBUG - New value at index 267, column RAU: 1.516017123871475
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 268, column RAU: 4.0034
-2024-09-25 10:04:44,476 - DEBUG - New value at index 268, column RAU: 2.493877697728738
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 269, column RAU: 0.5163
-2024-09-25 10:04:44,476 - DEBUG - New value at index 269, column RAU: 0.4835060558787878
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 270, column RAU: 0.6322
-2024-09-25 10:04:44,476 - DEBUG - New value at index 270, column RAU: 3.7842074012237363
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 271, column RAU: 0.065
-2024-09-25 10:04:44,476 - DEBUG - New value at index 271, column RAU: 2.1235347023427846
-2024-09-25 10:04:44,476 - DEBUG - Original value at index 272, column RAU: 2.8579
-2024-09-25 10:04:44,477 - DEBUG - New value at index 272, column RAU: 3.1783835277796224
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 273, column RAU: 1.624
-2024-09-25 10:04:44,477 - DEBUG - New value at index 273, column RAU: 4.86634336713202
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 274, column RAU: 1.5492
-2024-09-25 10:04:44,477 - DEBUG - New value at index 274, column RAU: 2.799772218274565
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 275, column RAU: 1.3062
-2024-09-25 10:04:44,477 - DEBUG - New value at index 275, column RAU: 0.2536132860306855
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 276, column RAU: 2.8273
-2024-09-25 10:04:44,477 - DEBUG - New value at index 276, column RAU: 4.754428938287858
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 277, column RAU: 7.0548
-2024-09-25 10:04:44,477 - DEBUG - New value at index 277, column RAU: 0.8887663265014374
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 278, column RAU: 1.0898
-2024-09-25 10:04:44,477 - DEBUG - New value at index 278, column RAU: 2.922277590460923
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 279, column RAU: 0.1973
-2024-09-25 10:04:44,477 - DEBUG - New value at index 279, column RAU: 2.4888817575410713
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 280, column RAU: 1.526
-2024-09-25 10:04:44,477 - DEBUG - New value at index 280, column RAU: 1.7260066012520785
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 281, column RAU: 0.7016
-2024-09-25 10:04:44,477 - DEBUG - New value at index 281, column RAU: 2.1634909801196947
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 282, column RAU: 3.062
-2024-09-25 10:04:44,477 - DEBUG - New value at index 282, column RAU: 0.10061221253524028
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 283, column RAU: 1.2904
-2024-09-25 10:04:44,477 - DEBUG - New value at index 283, column RAU: 4.018089596027099
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 284, column RAU: 0.9864
-2024-09-25 10:04:44,477 - DEBUG - New value at index 284, column RAU: 4.0862209420347835
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 285, column RAU: 0.4126
-2024-09-25 10:04:44,477 - DEBUG - New value at index 285, column RAU: 0.4102025920494979
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 286, column RAU: 6.2459
-2024-09-25 10:04:44,477 - DEBUG - New value at index 286, column RAU: 0.19518729219160816
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 287, column RAU: 4.9058
-2024-09-25 10:04:44,477 - DEBUG - New value at index 287, column RAU: 3.0194196522396406
-2024-09-25 10:04:44,477 - DEBUG - Original value at index 288, column RAU: 1.838
-2024-09-25 10:04:44,478 - DEBUG - New value at index 288, column RAU: 1.1087374646212167
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 289, column RAU: 1.0326
-2024-09-25 10:04:44,478 - DEBUG - New value at index 289, column RAU: 3.85880056950492
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 290, column RAU: 4.5589
-2024-09-25 10:04:44,478 - DEBUG - New value at index 290, column RAU: 0.6161182613717151
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 291, column RAU: 2.6414
-2024-09-25 10:04:44,478 - DEBUG - New value at index 291, column RAU: 4.287346044340709
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 292, column RAU: 0.7282
-2024-09-25 10:04:44,478 - DEBUG - New value at index 292, column RAU: 2.0231084560185537
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 293, column RAU: 1.0801
-2024-09-25 10:04:44,478 - DEBUG - New value at index 293, column RAU: 4.32108556710312
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 294, column RAU: 2.5598
-2024-09-25 10:04:44,478 - DEBUG - New value at index 294, column RAU: 0.6485367805391861
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 295, column RAU: 5.5888
-2024-09-25 10:04:44,478 - DEBUG - New value at index 295, column RAU: 0.7878118081106837
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 296, column RAU: 2.3308
-2024-09-25 10:04:44,478 - DEBUG - New value at index 296, column RAU: 1.3770030335947083
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 297, column RAU: 0.8823
-2024-09-25 10:04:44,478 - DEBUG - New value at index 297, column RAU: 4.236566373865279
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 298, column RAU: 2.3081
-2024-09-25 10:04:44,478 - DEBUG - New value at index 298, column RAU: 2.178230005793435
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 299, column RAU: 3.0761
-2024-09-25 10:04:44,478 - DEBUG - New value at index 299, column RAU: 2.4807545969916216
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 300, column RAU: 1.7441
-2024-09-25 10:04:44,478 - DEBUG - New value at index 300, column RAU: 0.14840535376304603
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 301, column RAU: 1.8474
-2024-09-25 10:04:44,478 - DEBUG - New value at index 301, column RAU: 1.6272475011744092
-2024-09-25 10:04:44,478 - DEBUG - Original value at index 302, column RAU: 3.3394
-2024-09-25 10:04:44,479 - DEBUG - New value at index 302, column RAU: 3.698355919628923
-2024-09-25 10:04:44,479 - DEBUG - Original value at index 303, column RAU: 3.5574
-2024-09-25 10:04:44,479 - DEBUG - New value at index 303, column RAU: 4.7421384686935175
-2024-09-25 10:04:44,479 - DEBUG - Original value at index 304, column RAU: 4.56
-2024-09-25 10:04:44,479 - DEBUG - New value at index 304, column RAU: 0.46634522322315297
-2024-09-25 10:04:44,479 - DEBUG - Original value at index 305, column RAU: 4.3662
-2024-09-25 10:04:44,479 - DEBUG - New value at index 305, column RAU: 4.2654445280760545
-2024-09-25 10:04:44,479 - DEBUG - Original value at index 306, column RAU: 1.3083
-2024-09-25 10:04:44,479 - DEBUG - New value at index 306, column RAU: 2.8761232372620817
-2024-09-25 10:04:44,479 - DEBUG - Original value at index 307, column RAU: 2.2773
-2024-09-25 10:04:44,479 - DEBUG - New value at index 307, column RAU: 4.481148177246694
-2024-09-25 10:04:44,479 - DEBUG - Original value at index 308, column RAU: 5.6798
-2024-09-25 10:04:44,479 - DEBUG - New value at index 308, column RAU: 4.744981736813233
-2024-09-25 10:04:44,479 - DEBUG - Original value at index 309, column RAU: 3.2271
-2024-09-25 10:04:44,479 - DEBUG - New value at index 309, column RAU: 3.5000775523429515
-2024-09-25 10:04:44,479 - DEBUG - Original value at index 310, column RAU: 1.3881
-2024-09-25 10:04:44,479 - DEBUG - New value at index 310, column RAU: 4.388996080189277
-2024-09-25 10:04:44,479 - DEBUG - Original value at index 311, column RAU: 5.6353
-2024-09-25 10:04:44,479 - DEBUG - New value at index 311, column RAU: 0.9599024860626026
-2024-09-25 10:04:44,479 - DEBUG - Original value at index 312, column RAU: 5.6799
-2024-09-25 10:04:44,480 - DEBUG - New value at index 312, column RAU: 4.738963285894921
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 313, column RAU: 76.768
-2024-09-25 10:04:44,480 - DEBUG - New value at index 313, column RAU: 0.698363229305751
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 314, column RAU: 3.1393
-2024-09-25 10:04:44,480 - DEBUG - New value at index 314, column RAU: 3.4703539606436777
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 315, column RAU: 1.876
-2024-09-25 10:04:44,480 - DEBUG - New value at index 315, column RAU: 4.252822851516599
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 316, column RAU: 4.5194
-2024-09-25 10:04:44,480 - DEBUG - New value at index 316, column RAU: 1.5650490818360405
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 317, column RAU: 4.715
-2024-09-25 10:04:44,480 - DEBUG - New value at index 317, column RAU: 4.760878829629564
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 318, column RAU: 6.543
-2024-09-25 10:04:44,480 - DEBUG - New value at index 318, column RAU: 4.200653332652574
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 319, column RAU: 6.4535
-2024-09-25 10:04:44,480 - DEBUG - New value at index 319, column RAU: 2.4036076264662123
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 320, column RAU: 5.6726
-2024-09-25 10:04:44,480 - DEBUG - New value at index 320, column RAU: 1.2445481856700402
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 321, column RAU: 13.753
-2024-09-25 10:04:44,480 - DEBUG - New value at index 321, column RAU: 2.7284604128414354
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 322, column RAU: 2.6038
-2024-09-25 10:04:44,480 - DEBUG - New value at index 322, column RAU: 4.749765156831769
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 323, column RAU: 6.4992
-2024-09-25 10:04:44,480 - DEBUG - New value at index 323, column RAU: 4.6663337295144425
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 324, column RAU: 30.4819
-2024-09-25 10:04:44,480 - DEBUG - New value at index 324, column RAU: 4.621007786507773
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 325, column RAU: 5.6912
-2024-09-25 10:04:44,480 - DEBUG - New value at index 325, column RAU: 0.061030427534664256
-2024-09-25 10:04:44,480 - DEBUG - Original value at index 326, column RAU: 42.2652
-2024-09-25 10:04:44,481 - DEBUG - New value at index 326, column RAU: 4.773897099814127
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 327, column RAU: 1.6644
-2024-09-25 10:04:44,481 - DEBUG - New value at index 327, column RAU: 2.4794096340204423
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 328, column RAU: 27.5748
-2024-09-25 10:04:44,481 - DEBUG - New value at index 328, column RAU: 3.6391113617409663
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 329, column RAU: 5.6553
-2024-09-25 10:04:44,481 - DEBUG - New value at index 329, column RAU: 0.3816600309094326
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 330, column RAU: 17.6224
-2024-09-25 10:04:44,481 - DEBUG - New value at index 330, column RAU: 3.0491868912297604
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 331, column RAU: 21.4816
-2024-09-25 10:04:44,481 - DEBUG - New value at index 331, column RAU: 1.1979887422857138
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 332, column RAU: 0.9431
-2024-09-25 10:04:44,481 - DEBUG - New value at index 332, column RAU: 3.0666328176481583
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 333, column RAU: 1.6979
-2024-09-25 10:04:44,481 - DEBUG - New value at index 333, column RAU: 1.7250747022348014
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 334, column RAU: 19.4534
-2024-09-25 10:04:44,481 - DEBUG - New value at index 334, column RAU: 4.814016191737005
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 335, column RAU: 9.172
-2024-09-25 10:04:44,481 - DEBUG - New value at index 335, column RAU: 4.463548181179665
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 336, column RAU: 1.335
-2024-09-25 10:04:44,481 - DEBUG - New value at index 336, column RAU: 2.437850818326901
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 337, column RAU: 3.409
-2024-09-25 10:04:44,481 - DEBUG - New value at index 337, column RAU: 3.713013823277874
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 338, column RAU: 0.8324
-2024-09-25 10:04:44,481 - DEBUG - New value at index 338, column RAU: 0.020552417799023524
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 339, column RAU: 0.1675
-2024-09-25 10:04:44,481 - DEBUG - New value at index 339, column RAU: 3.6982428010603265
-2024-09-25 10:04:44,481 - DEBUG - Original value at index 340, column RAU: 2.8252
-2024-09-25 10:04:44,482 - DEBUG - New value at index 340, column RAU: 0.5461566030651653
-2024-09-25 10:04:44,482 - DEBUG - Original value at index 341, column RAU: 0.2661
-2024-09-25 10:04:44,482 - DEBUG - New value at index 341, column RAU: 3.601377344961828
-2024-09-25 10:04:44,482 - DEBUG - Original value at index 342, column RAU: 0.0597
-2024-09-25 10:04:44,482 - DEBUG - New value at index 342, column RAU: 4.210901321543645
-2024-09-25 10:04:44,482 - DEBUG - Original value at index 343, column RAU: 0.1222
-2024-09-25 10:04:44,482 - DEBUG - New value at index 343, column RAU: 1.3666703173093555
-2024-09-25 10:04:44,482 - DEBUG - Original value at index 344, column RAU: 0.7958
-2024-09-25 10:04:44,482 - DEBUG - New value at index 344, column RAU: 1.1101872363868535
-2024-09-25 10:04:44,482 - DEBUG - Original value at index 345, column RAU: 1.1987
-2024-09-25 10:04:44,482 - DEBUG - New value at index 345, column RAU: 2.3539339867357185
-2024-09-25 10:04:44,482 - DEBUG - Original value at index 346, column RAU: 6.8265
-2024-09-25 10:04:44,482 - DEBUG - New value at index 346, column RAU: 3.7672679758322474
-2024-09-25 10:04:44,482 - DEBUG - Original value at index 347, column RAU: 0.5892
-2024-09-25 10:04:44,482 - DEBUG - New value at index 347, column RAU: 0.9625387106258662
-2024-09-25 10:04:44,482 - DEBUG - Original value at index 348, column RAU: 0.2536
-2024-09-25 10:04:44,482 - DEBUG - New value at index 348, column RAU: 0.09390754228692848
-2024-09-25 10:04:44,482 - DEBUG - Original value at index 349, column RAU: 0.1631
-2024-09-25 10:04:44,482 - DEBUG - New value at index 349, column RAU: 0.02324586814903231
-2024-09-25 10:04:44,482 - DEBUG - Original value at index 350, column RAU: 1.9582
-2024-09-25 10:04:44,482 - DEBUG - New value at index 350, column RAU: 2.08884851528355
-2024-09-25 10:04:44,482 - DEBUG - Original value at index 351, column RAU: 1.365
-2024-09-25 10:04:44,482 - DEBUG - New value at index 351, column RAU: 1.7805741271585644
-2024-09-25 10:04:44,482 - INFO - Writing modified data to text file for iteration 0 (number 0) for Spechbach_RNAB.TXT
-2024-09-25 10:04:44,483 - INFO - Writing modified DataFrame to new file: C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_RNAB_0.txt
-2024-09-25 10:04:44,485 - DEBUG - DataFrame written to file successfully
-2024-09-25 10:04:44,485 - INFO - Starting STANET import for iteration 0 (number 0) without load for Spechbach_RNAB.TXT
-2024-09-25 10:04:44,485 - INFO - Preparing to import data for number 0
-2024-09-25 10:04:44,485 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_RNAB_0.TXT" /A /B
-2024-09-25 10:04:49,673 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_RNAB_0.TXT" /A /B
-2024-09-25 10:04:49,673 - INFO - Starting STANET export for iteration 0 (number 0) without load for Spechbach_RNAB.TXT
-2024-09-25 10:04:49,673 - INFO - Preparing to export data for number 0
-2024-09-25 10:04:49,673 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Roughness_without_load_0.csv" /B /MED=04:00
-2024-09-25 10:04:54,898 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Roughness_without_load_0.csv" /B /MED=04:00
-2024-09-25 10:04:54,898 - INFO - Starting STANET import for iteration 0 (number 0) with load for Spechbach_RNAB.TXT
-2024-09-25 10:04:54,898 - INFO - Preparing to import data for number 0
-2024-09-25 10:04:54,898 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Roughness_with_load.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_RNAB_0.TXT" /A /B
-2024-09-25 10:05:00,398 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Roughness_with_load.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_RNAB_0.TXT" /A /B
-2024-09-25 10:05:00,398 - INFO - Starting STANET export for iteration 0 (number 0) with load for Spechbach_RNAB.TXT
-2024-09-25 10:05:00,398 - INFO - Preparing to export data for number 0
-2024-09-25 10:05:00,398 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Roughness_with_load.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Roughness_with_load_0.csv" /B /MED=04:00
-2024-09-25 10:05:05,828 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Roughness_with_load.STA" /CONFIG="C:\Users\D.Muehlfeld\Documents\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\Documents\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Roughness_with_load_0.csv" /B /MED=04:00
-2024-09-25 10:05:05,828 - INFO - Finished iteration 0 (number 0) for Spechbach_RNAB.TXT
+2024-10-24 16:35:24,680 - INFO - Starting file processing for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:24,680 - INFO - DataLoader initialized with file path: C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Spechbach_Simplification^2.TXT
+2024-10-24 16:35:24,680 - INFO - Attempting to read file: C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Spechbach_Simplification^2.TXT
+2024-10-24 16:35:24,681 - DEBUG - File opened successfully
+2024-10-24 16:35:24,681 - DEBUG - File read into memory
+2024-10-24 16:35:24,685 - DEBUG - Data parsed into DataFrame
+2024-10-24 16:35:24,685 - INFO - Start iteration 0 (number 4716) for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:24,685 - INFO - Changing friction for iteration 0 (number 4716) for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:24,685 - INFO - DataProcessor initialized with file: C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Spechbach_Simplification^2.TXT
+2024-10-24 16:35:24,685 - INFO - Starting to change friction values for rows where the first column is 'RAU'.
+2024-10-24 16:35:24,685 - DEBUG - Original value at index 0, column RAU: 0.1
+2024-10-24 16:35:24,685 - DEBUG - New value at index 0, colum RAU old: 0.1, column RAU new: 0.19464567293511045
+2024-10-24 16:35:24,685 - DEBUG - Original value at index 1, column RAU: 0.1
+2024-10-24 16:35:24,685 - DEBUG - New value at index 1, colum RAU old: 0.1, column RAU new: 0.1426199558247199
+2024-10-24 16:35:24,685 - DEBUG - Original value at index 2, column RAU: 0.1
+2024-10-24 16:35:24,685 - DEBUG - New value at index 2, colum RAU old: 0.1, column RAU new: 0.17670383670401824
+2024-10-24 16:35:24,685 - DEBUG - Original value at index 3, column RAU: 0.1
+2024-10-24 16:35:24,686 - DEBUG - New value at index 3, colum RAU old: 0.1, column RAU new: 0.11917086953463474
+2024-10-24 16:35:24,686 - DEBUG - Original value at index 4, column RAU: 0.1
+2024-10-24 16:35:24,686 - DEBUG - New value at index 4, colum RAU old: 0.1, column RAU new: 0.1721758924174982
+2024-10-24 16:35:24,686 - DEBUG - Original value at index 5, column RAU: 0.1
+2024-10-24 16:35:24,686 - DEBUG - New value at index 5, colum RAU old: 0.1, column RAU new: 0.1356966431626352
+2024-10-24 16:35:24,686 - DEBUG - Original value at index 6, column RAU: 0.1
+2024-10-24 16:35:24,686 - DEBUG - New value at index 6, colum RAU old: 0.1, column RAU new: 0.1076895311988134
+2024-10-24 16:35:24,686 - DEBUG - Original value at index 7, column RAU: 0.1
+2024-10-24 16:35:24,686 - DEBUG - New value at index 7, colum RAU old: 0.1, column RAU new: 0.10343582776691854
+2024-10-24 16:35:24,686 - DEBUG - Original value at index 8, column RAU: 0.1
+2024-10-24 16:35:24,686 - DEBUG - New value at index 8, colum RAU old: 0.1, column RAU new: 0.1562496078559537
+2024-10-24 16:35:24,686 - DEBUG - Original value at index 9, column RAU: 0.1
+2024-10-24 16:35:24,686 - DEBUG - New value at index 9, colum RAU old: 0.1, column RAU new: 0.13094685315810176
+2024-10-24 16:35:24,686 - DEBUG - Original value at index 10, column RAU: 0.1
+2024-10-24 16:35:24,686 - DEBUG - New value at index 10, colum RAU old: 0.1, column RAU new: 0.12708932614635582
+2024-10-24 16:35:24,686 - DEBUG - Original value at index 11, column RAU: 0.1
+2024-10-24 16:35:24,686 - DEBUG - New value at index 11, colum RAU old: 0.1, column RAU new: 0.10741194664454393
+2024-10-24 16:35:24,686 - DEBUG - Original value at index 12, column RAU: 0.1
+2024-10-24 16:35:24,686 - DEBUG - New value at index 12, colum RAU old: 0.1, column RAU new: 0.1714667249749744
+2024-10-24 16:35:24,686 - DEBUG - Original value at index 13, column RAU: 0.1
+2024-10-24 16:35:24,686 - DEBUG - New value at index 13, colum RAU old: 0.1, column RAU new: 0.15870404365040686
+2024-10-24 16:35:24,687 - DEBUG - Original value at index 14, column RAU: 0.1
+2024-10-24 16:35:24,687 - DEBUG - New value at index 14, colum RAU old: 0.1, column RAU new: 0.1836719550289056
+2024-10-24 16:35:24,687 - DEBUG - Original value at index 15, column RAU: 0.1
+2024-10-24 16:35:24,687 - DEBUG - New value at index 15, colum RAU old: 0.1, column RAU new: 0.15369392230597587
+2024-10-24 16:35:24,687 - DEBUG - Original value at index 16, column RAU: 0.1
+2024-10-24 16:35:24,687 - DEBUG - New value at index 16, colum RAU old: 0.1, column RAU new: 0.15955029099762952
+2024-10-24 16:35:24,687 - DEBUG - Original value at index 17, column RAU: 0.1
+2024-10-24 16:35:24,687 - DEBUG - New value at index 17, colum RAU old: 0.1, column RAU new: 0.1446490862116819
+2024-10-24 16:35:24,687 - DEBUG - Original value at index 18, column RAU: 0.1
+2024-10-24 16:35:24,687 - DEBUG - New value at index 18, colum RAU old: 0.1, column RAU new: 0.19482306025345789
+2024-10-24 16:35:24,687 - DEBUG - Original value at index 19, column RAU: 0.1
+2024-10-24 16:35:24,687 - DEBUG - New value at index 19, colum RAU old: 0.1, column RAU new: 0.14161056326067753
+2024-10-24 16:35:24,687 - DEBUG - Original value at index 20, column RAU: 0.1
+2024-10-24 16:35:24,687 - DEBUG - New value at index 20, colum RAU old: 0.1, column RAU new: 0.19959451852389232
+2024-10-24 16:35:24,687 - DEBUG - Original value at index 21, column RAU: 0.1
+2024-10-24 16:35:24,687 - DEBUG - New value at index 21, colum RAU old: 0.1, column RAU new: 0.1307208655020163
+2024-10-24 16:35:24,687 - DEBUG - Original value at index 22, column RAU: 0.1
+2024-10-24 16:35:24,687 - DEBUG - New value at index 22, colum RAU old: 0.1, column RAU new: 0.11906547517367105
+2024-10-24 16:35:24,687 - INFO - Writing modified data to text file for iteration 0 (number 4716) for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:24,688 - INFO - Writing modified DataFrame to new file: C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^2_4716.txt
+2024-10-24 16:35:24,690 - DEBUG - DataFrame written to file successfully
+2024-10-24 16:35:24,690 - INFO - Starting STANET import for iteration 0 (number 4716) without load for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:24,690 - INFO - Preparing to import data for number 4716
+2024-10-24 16:35:24,690 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^2_4716.TXT" /A /B
+2024-10-24 16:35:29,193 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^2_4716.TXT" /A /B
+2024-10-24 16:35:29,193 - INFO - Starting STANET export for iteration 0 (number 4716) without load for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:29,193 - INFO - Preparing to export data for number 4716
+2024-10-24 16:35:29,193 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^2_Roughness_without_load_4716.csv" /B /MED=04:00
+2024-10-24 16:35:33,786 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^2_Roughness_without_load_4716.csv" /B /MED=04:00
+2024-10-24 16:35:33,786 - INFO - Starting STANET import for iteration 0 (number 4716) with load for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:33,787 - INFO - Preparing to import data for number 4716
+2024-10-24 16:35:33,787 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_with_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^2_4716.TXT" /A /B
+2024-10-24 16:35:38,432 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_with_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^2_4716.TXT" /A /B
+2024-10-24 16:35:38,432 - INFO - Starting STANET export for iteration 0 (number 4716) with load for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:38,432 - INFO - Preparing to export data for number 4716
+2024-10-24 16:35:38,432 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_with_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^2_Roughness_with_load_4716.csv" /B /MED=04:00
+2024-10-24 16:35:43,191 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_with_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^2_Roughness_with_load_4716.csv" /B /MED=04:00
+2024-10-24 16:35:43,191 - INFO - Finished iteration 0 (number 4716) for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:43,191 - INFO - Start iteration 1 (number 4717) for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:43,191 - INFO - Changing friction for iteration 1 (number 4717) for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:43,191 - INFO - DataProcessor initialized with file: C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Spechbach_Simplification^2.TXT
+2024-10-24 16:35:43,191 - INFO - Starting to change friction values for rows where the first column is 'RAU'.
+2024-10-24 16:35:43,192 - DEBUG - Original value at index 0, column RAU: 0.1
+2024-10-24 16:35:43,192 - DEBUG - New value at index 0, colum RAU old: 0.1, column RAU new: 0.13590714853475974
+2024-10-24 16:35:43,192 - DEBUG - Original value at index 1, column RAU: 0.1
+2024-10-24 16:35:43,192 - DEBUG - New value at index 1, colum RAU old: 0.1, column RAU new: 0.1382779672366859
+2024-10-24 16:35:43,192 - DEBUG - Original value at index 2, column RAU: 0.1
+2024-10-24 16:35:43,192 - DEBUG - New value at index 2, colum RAU old: 0.1, column RAU new: 0.10342183291759191
+2024-10-24 16:35:43,192 - DEBUG - Original value at index 3, column RAU: 0.1
+2024-10-24 16:35:43,192 - DEBUG - New value at index 3, colum RAU old: 0.1, column RAU new: 0.1698756213938237
+2024-10-24 16:35:43,192 - DEBUG - Original value at index 4, column RAU: 0.1
+2024-10-24 16:35:43,192 - DEBUG - New value at index 4, colum RAU old: 0.1, column RAU new: 0.10983364161607967
+2024-10-24 16:35:43,192 - DEBUG - Original value at index 5, column RAU: 0.1
+2024-10-24 16:35:43,192 - DEBUG - New value at index 5, colum RAU old: 0.1, column RAU new: 0.14042356670314968
+2024-10-24 16:35:43,192 - DEBUG - Original value at index 6, column RAU: 0.1
+2024-10-24 16:35:43,192 - DEBUG - New value at index 6, colum RAU old: 0.1, column RAU new: 0.11901199335328863
+2024-10-24 16:35:43,192 - DEBUG - Original value at index 7, column RAU: 0.1
+2024-10-24 16:35:43,192 - DEBUG - New value at index 7, colum RAU old: 0.1, column RAU new: 0.17179758372685616
+2024-10-24 16:35:43,192 - DEBUG - Original value at index 8, column RAU: 0.1
+2024-10-24 16:35:43,192 - DEBUG - New value at index 8, colum RAU old: 0.1, column RAU new: 0.10163310007325728
+2024-10-24 16:35:43,192 - DEBUG - Original value at index 9, column RAU: 0.1
+2024-10-24 16:35:43,193 - DEBUG - New value at index 9, colum RAU old: 0.1, column RAU new: 0.13675338480980612
+2024-10-24 16:35:43,193 - DEBUG - Original value at index 10, column RAU: 0.1
+2024-10-24 16:35:43,193 - DEBUG - New value at index 10, colum RAU old: 0.1, column RAU new: 0.16877244626421342
+2024-10-24 16:35:43,193 - DEBUG - Original value at index 11, column RAU: 0.1
+2024-10-24 16:35:43,193 - DEBUG - New value at index 11, colum RAU old: 0.1, column RAU new: 0.1596082933193914
+2024-10-24 16:35:43,193 - DEBUG - Original value at index 12, column RAU: 0.1
+2024-10-24 16:35:43,193 - DEBUG - New value at index 12, colum RAU old: 0.1, column RAU new: 0.10393738598192258
+2024-10-24 16:35:43,193 - DEBUG - Original value at index 13, column RAU: 0.1
+2024-10-24 16:35:43,193 - DEBUG - New value at index 13, colum RAU old: 0.1, column RAU new: 0.11387183615074768
+2024-10-24 16:35:43,193 - DEBUG - Original value at index 14, column RAU: 0.1
+2024-10-24 16:35:43,193 - DEBUG - New value at index 14, colum RAU old: 0.1, column RAU new: 0.19437032096749235
+2024-10-24 16:35:43,193 - DEBUG - Original value at index 15, column RAU: 0.1
+2024-10-24 16:35:43,193 - DEBUG - New value at index 15, colum RAU old: 0.1, column RAU new: 0.1621239158403499
+2024-10-24 16:35:43,193 - DEBUG - Original value at index 16, column RAU: 0.1
+2024-10-24 16:35:43,193 - DEBUG - New value at index 16, colum RAU old: 0.1, column RAU new: 0.14948101605871159
+2024-10-24 16:35:43,193 - DEBUG - Original value at index 17, column RAU: 0.1
+2024-10-24 16:35:43,193 - DEBUG - New value at index 17, colum RAU old: 0.1, column RAU new: 0.18230324009521354
+2024-10-24 16:35:43,193 - DEBUG - Original value at index 18, column RAU: 0.1
+2024-10-24 16:35:43,193 - DEBUG - New value at index 18, colum RAU old: 0.1, column RAU new: 0.1868876542099605
+2024-10-24 16:35:43,193 - DEBUG - Original value at index 19, column RAU: 0.1
+2024-10-24 16:35:43,193 - DEBUG - New value at index 19, colum RAU old: 0.1, column RAU new: 0.1606562294016346
+2024-10-24 16:35:43,193 - DEBUG - Original value at index 20, column RAU: 0.1
+2024-10-24 16:35:43,194 - DEBUG - New value at index 20, colum RAU old: 0.1, column RAU new: 0.1151771371209232
+2024-10-24 16:35:43,194 - DEBUG - Original value at index 21, column RAU: 0.1
+2024-10-24 16:35:43,194 - DEBUG - New value at index 21, colum RAU old: 0.1, column RAU new: 0.18841239031847473
+2024-10-24 16:35:43,194 - DEBUG - Original value at index 22, column RAU: 0.1
+2024-10-24 16:35:43,194 - DEBUG - New value at index 22, colum RAU old: 0.1, column RAU new: 0.18191655546745444
+2024-10-24 16:35:43,194 - INFO - Writing modified data to text file for iteration 1 (number 4717) for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:43,194 - INFO - Writing modified DataFrame to new file: C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^2_4717.txt
+2024-10-24 16:35:43,196 - DEBUG - DataFrame written to file successfully
+2024-10-24 16:35:43,196 - INFO - Starting STANET import for iteration 1 (number 4717) without load for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:43,196 - INFO - Preparing to import data for number 4717
+2024-10-24 16:35:43,196 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^2_4717.TXT" /A /B
+2024-10-24 16:35:47,707 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^2_4717.TXT" /A /B
+2024-10-24 16:35:47,707 - INFO - Starting STANET export for iteration 1 (number 4717) without load for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:47,707 - INFO - Preparing to export data for number 4717
+2024-10-24 16:35:47,707 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^2_Roughness_without_load_4717.csv" /B /MED=04:00
+2024-10-24 16:35:52,146 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^2_Roughness_without_load_4717.csv" /B /MED=04:00
+2024-10-24 16:35:52,146 - INFO - Starting STANET import for iteration 1 (number 4717) with load for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:52,146 - INFO - Preparing to import data for number 4717
+2024-10-24 16:35:52,146 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_with_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^2_4717.TXT" /A /B
+2024-10-24 16:35:56,903 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_with_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^2_4717.TXT" /A /B
+2024-10-24 16:35:56,903 - INFO - Starting STANET export for iteration 1 (number 4717) with load for Spechbach_Simplification^2.TXT
+2024-10-24 16:35:56,903 - INFO - Preparing to export data for number 4717
+2024-10-24 16:35:56,903 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_with_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^2_Roughness_with_load_4717.csv" /B /MED=04:00
+2024-10-24 16:36:01,530 - INFO - Command executed successfully: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_with_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /Y="CSV" /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^2_Roughness_with_load_4717.csv" /B /MED=04:00
+2024-10-24 16:36:01,530 - INFO - Finished iteration 1 (number 4717) for Spechbach_Simplification^2.TXT
+2024-10-24 16:36:01,530 - INFO - Start iteration 2 (number 4718) for Spechbach_Simplification^2.TXT
+2024-10-24 16:36:01,530 - INFO - Changing friction for iteration 2 (number 4718) for Spechbach_Simplification^2.TXT
+2024-10-24 16:36:01,530 - INFO - DataProcessor initialized with file: C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Spechbach_Simplification^2.TXT
+2024-10-24 16:36:01,530 - INFO - Starting to change friction values for rows where the first column is 'RAU'.
+2024-10-24 16:36:01,531 - DEBUG - Original value at index 0, column RAU: 0.1
+2024-10-24 16:36:01,531 - DEBUG - New value at index 0, colum RAU old: 0.1, column RAU new: 0.10868513233973139
+2024-10-24 16:36:01,531 - DEBUG - Original value at index 1, column RAU: 0.1
+2024-10-24 16:36:01,531 - DEBUG - New value at index 1, colum RAU old: 0.1, column RAU new: 0.16524436266039602
+2024-10-24 16:36:01,531 - DEBUG - Original value at index 2, column RAU: 0.1
+2024-10-24 16:36:01,531 - DEBUG - New value at index 2, colum RAU old: 0.1, column RAU new: 0.13652713836414151
+2024-10-24 16:36:01,531 - DEBUG - Original value at index 3, column RAU: 0.1
+2024-10-24 16:36:01,531 - DEBUG - New value at index 3, colum RAU old: 0.1, column RAU new: 0.1656433412315649
+2024-10-24 16:36:01,531 - DEBUG - Original value at index 4, column RAU: 0.1
+2024-10-24 16:36:01,531 - DEBUG - New value at index 4, colum RAU old: 0.1, column RAU new: 0.1466254996895032
+2024-10-24 16:36:01,531 - DEBUG - Original value at index 5, column RAU: 0.1
+2024-10-24 16:36:01,531 - DEBUG - New value at index 5, colum RAU old: 0.1, column RAU new: 0.19290739473485471
+2024-10-24 16:36:01,531 - DEBUG - Original value at index 6, column RAU: 0.1
+2024-10-24 16:36:01,531 - DEBUG - New value at index 6, colum RAU old: 0.1, column RAU new: 0.16249847276668264
+2024-10-24 16:36:01,531 - DEBUG - Original value at index 7, column RAU: 0.1
+2024-10-24 16:36:01,531 - DEBUG - New value at index 7, colum RAU old: 0.1, column RAU new: 0.19515619067609782
+2024-10-24 16:36:01,532 - DEBUG - Original value at index 8, column RAU: 0.1
+2024-10-24 16:36:01,532 - DEBUG - New value at index 8, colum RAU old: 0.1, column RAU new: 0.14648887389642837
+2024-10-24 16:36:01,532 - DEBUG - Original value at index 9, column RAU: 0.1
+2024-10-24 16:36:01,532 - DEBUG - New value at index 9, colum RAU old: 0.1, column RAU new: 0.19259864433783375
+2024-10-24 16:36:01,532 - DEBUG - Original value at index 10, column RAU: 0.1
+2024-10-24 16:36:01,532 - DEBUG - New value at index 10, colum RAU old: 0.1, column RAU new: 0.17594833652529746
+2024-10-24 16:36:01,532 - DEBUG - Original value at index 11, column RAU: 0.1
+2024-10-24 16:36:01,532 - DEBUG - New value at index 11, colum RAU old: 0.1, column RAU new: 0.12389693008422312
+2024-10-24 16:36:01,532 - DEBUG - Original value at index 12, column RAU: 0.1
+2024-10-24 16:36:01,532 - DEBUG - New value at index 12, colum RAU old: 0.1, column RAU new: 0.17866451446921758
+2024-10-24 16:36:01,532 - DEBUG - Original value at index 13, column RAU: 0.1
+2024-10-24 16:36:01,532 - DEBUG - New value at index 13, colum RAU old: 0.1, column RAU new: 0.1962983336196632
+2024-10-24 16:36:01,532 - DEBUG - Original value at index 14, column RAU: 0.1
+2024-10-24 16:36:01,532 - DEBUG - New value at index 14, colum RAU old: 0.1, column RAU new: 0.12104376330260531
+2024-10-24 16:36:01,532 - DEBUG - Original value at index 15, column RAU: 0.1
+2024-10-24 16:36:01,532 - DEBUG - New value at index 15, colum RAU old: 0.1, column RAU new: 0.18815665121101008
+2024-10-24 16:36:01,532 - DEBUG - Original value at index 16, column RAU: 0.1
+2024-10-24 16:36:01,532 - DEBUG - New value at index 16, colum RAU old: 0.1, column RAU new: 0.15450584769536993
+2024-10-24 16:36:01,532 - DEBUG - Original value at index 17, column RAU: 0.1
+2024-10-24 16:36:01,532 - DEBUG - New value at index 17, colum RAU old: 0.1, column RAU new: 0.12675575040869216
+2024-10-24 16:36:01,532 - DEBUG - Original value at index 18, column RAU: 0.1
+2024-10-24 16:36:01,532 - DEBUG - New value at index 18, colum RAU old: 0.1, column RAU new: 0.16554029267014597
+2024-10-24 16:36:01,532 - DEBUG - Original value at index 19, column RAU: 0.1
+2024-10-24 16:36:01,533 - DEBUG - New value at index 19, colum RAU old: 0.1, column RAU new: 0.11263357342505703
+2024-10-24 16:36:01,533 - DEBUG - Original value at index 20, column RAU: 0.1
+2024-10-24 16:36:01,533 - DEBUG - New value at index 20, colum RAU old: 0.1, column RAU new: 0.14742941906688573
+2024-10-24 16:36:01,533 - DEBUG - Original value at index 21, column RAU: 0.1
+2024-10-24 16:36:01,533 - DEBUG - New value at index 21, colum RAU old: 0.1, column RAU new: 0.19842833612405497
+2024-10-24 16:36:01,533 - DEBUG - Original value at index 22, column RAU: 0.1
+2024-10-24 16:36:01,533 - DEBUG - New value at index 22, colum RAU old: 0.1, column RAU new: 0.10046831459869199
+2024-10-24 16:36:01,533 - INFO - Writing modified data to text file for iteration 2 (number 4718) for Spechbach_Simplification^2.TXT
+2024-10-24 16:36:01,533 - INFO - Writing modified DataFrame to new file: C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^2_4718.txt
+2024-10-24 16:36:01,535 - DEBUG - DataFrame written to file successfully
+2024-10-24 16:36:01,535 - INFO - Starting STANET import for iteration 2 (number 4718) without load for Spechbach_Simplification^2.TXT
+2024-10-24 16:36:01,535 - INFO - Preparing to import data for number 4718
+2024-10-24 16:36:01,535 - INFO - Executing command: "C:\Program Files\STANET\BIN\stanet64.exe" /N="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\11_Netz_RNAB\Spechbach_Simplification^2_Roughness_without_load.STA" /CONFIG="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\aktuelle Berechnungen\Spechebach_Rechennetzmodell_Wasser\Config_Spechbach" /X="Leitungen_Rauheiten_txt" /F="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^2_4718.TXT" /A /B

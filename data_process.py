@@ -58,11 +58,15 @@ class DataProcessor:
                     logging.debug(f"Value at index {idx}, column RAU is not a float: {value}")
                     continue
 
-                # If numeric, multiply the value by a random float between 0.3 and 3.
-                new_value = random.uniform(0.01, 5)
-                # Update the value in the DataFrame at the corresponding index.
+                # Assuming the old value is already in the DataFrame under 'RAU' column
+                old_value = modified_dataframe.at[idx, 'RAU']
+
+                # Multiply the old value by a random float between 1 and 10
+                new_value = old_value * (1+ random.uniform(0, 1))
+
+                # Update the value in the DataFrame at the corresponding index
                 modified_dataframe.at[idx, 'RAU'] = new_value
-                logging.debug(f"New value at index {idx}, column RAU: {new_value}")
+                logging.debug(f"New value at index {idx}, colum RAU old: {old_value}, column RAU new: {new_value}")
 
             # Handle any cases where the 'RAU' column is not found in the DataFrame.
             except KeyError as e:
