@@ -112,3 +112,5 @@ class StanetProcess:
         logging.info(
             f"Preparing to export data for number {self.current_number}")  # Log the start of the export process
         self.run_command(command_export)  # Execute the constructed command
+
+
