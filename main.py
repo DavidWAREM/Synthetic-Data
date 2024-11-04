@@ -19,7 +19,7 @@ def process_file(file_path, file_name, start_number):
     data_loader = DataLoader(file_path)
     df = data_loader.read_txt()  # Load the data into a DataFrame
 
-    iterations = 10000  # Number of iterations for processing each file
+    iterations = 15000  # Number of iterations for processing each file
     current_number = start_number  # Start from the specified number
 
     # Loop over the defined number of iterations (in this case, 3 iterations)
@@ -100,7 +100,7 @@ def main():
     directory_path = "C:\\Users\\D.Muehlfeld\\OneDrive - RBS wave GmbH\\Synthetic_Data\\Synthetic_Data_Roughness"
 
     # Define the starting number for iteration (this can be adjusted as needed)
-    start_number = 4716
+    start_number = 0
 
     # Iterate over all files in the directory and process each file that ends with ".TXT"
     for file_name in os.listdir(directory_path):
