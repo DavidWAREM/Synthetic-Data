@@ -62,7 +62,7 @@ class DataProcessor:
                 old_value = modified_dataframe.at[idx, 'RAU']
 
                 # Multiply the old value by a random float between 0 and 1
-                new_value = old_value * (1+ random.uniform(0, 100))
+                new_value = old_value * (1+ random.uniform(0, 0.1))
 
                 # Update the value in the DataFrame at the corresponding index
                 modified_dataframe.at[idx, 'RAU'] = new_value
