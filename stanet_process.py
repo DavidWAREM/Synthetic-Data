@@ -41,8 +41,8 @@ class StanetProcess:
         self.EXPORT_DEFINITION = ' /Y="CSV"'
 
         # Paths to the CSV export files, depending on the with_load flag
-        self.EXPORT_FILE_without_load = fr' /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^3_Roughness_without_load_{self.current_number}.csv"'
-        self.EXPORT_FILE_with_load = fr' /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^3_Roughness_with_load_{self.current_number}.csv"'
+        self.EXPORT_FILE_without_load = fr' /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^3(0;100)_Roughness_without_load_{self.current_number}.csv"'
+        self.EXPORT_FILE_with_load = fr' /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^3(0;100)_Roughness_with_load_{self.current_number}.csv"'
 
         # Select the correct export file based on the with_load flag
         self.EXPORT_FILE = self.EXPORT_FILE_with_load if self.with_load else self.EXPORT_FILE_without_load

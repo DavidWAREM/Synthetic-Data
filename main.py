@@ -100,7 +100,7 @@ def main():
     directory_path = "C:\\Users\\D.Muehlfeld\\OneDrive - RBS wave GmbH\\Synthetic_Data\\Synthetic_Data_Roughness"
 
     # Define the starting number for iteration (this can be adjusted as needed)
-    start_number = 0
+    start_number = 888
 
     # Iterate over all files in the directory and process each file that ends with ".TXT"
     for file_name in os.listdir(directory_path):
