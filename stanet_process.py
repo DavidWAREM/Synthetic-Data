@@ -35,14 +35,14 @@ class StanetProcess:
         self.IMPORT_DEFINITION = ' /X="Leitungen_Rauheiten_txt"'
 
         # Path to the specific text file that will be imported into STANET, dynamically built using current_number
-        self.TEXT_FILE = fr' /F="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^3_{self.current_number}.TXT"'
+        self.TEXT_FILE = fr' /F="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\Import Data\Spechbach_Simplification^4_{self.current_number}.TXT"'
 
         # Export definition, specifies how STANET should export the data
         self.EXPORT_DEFINITION = ' /Y="CSV"'
 
         # Paths to the CSV export files, depending on the with_load flag
-        self.EXPORT_FILE_without_load = fr' /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^3(0;0.1)_Roughness_without_load_{self.current_number}.csv"'
-        self.EXPORT_FILE_with_load = fr' /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^3(0;0.1)_Roughness_with_load_{self.current_number}.csv"'
+        self.EXPORT_FILE_without_load = fr' /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^4(0;100)_Roughness_without_load_{self.current_number}.csv"'
+        self.EXPORT_FILE_with_load = fr' /E="C:\Users\D.Muehlfeld\OneDrive - RBS wave GmbH\Synthetic_Data\Synthetic_Data_Roughness\SyntheticData-Spechbach_Simplification^4(0;100)_Roughness_with_load_{self.current_number}.csv"'
 
         # Select the correct export file based on the with_load flag
         self.EXPORT_FILE = self.EXPORT_FILE_with_load if self.with_load else self.EXPORT_FILE_without_load
